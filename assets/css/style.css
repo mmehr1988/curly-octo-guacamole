@@ -16,6 +16,9 @@ body {
 
   /* Simple trick to create a smooth scrolling effect */
   scroll-behavior: smooth;
+  /*  For no screen bounce with over scrolling */
+  -ms-scroll-chaining: none;
+  overscroll-behavior: none;
 }
 
 /* -------------------------------------------------------------------------------------- */
@@ -23,14 +26,13 @@ body {
 /* -------------------------------------------------------------------------------------- */
 
 :root {
-  --nav-sticky-green: #1fb622;
-  --nav-reg-green: #1fb622;
   --nav-green: #1fb622;
   --h2-border-color: #777715;
   --h2-font-weight: 1000%;
   --p-keywords-color: #116813;
   --p-intro-color: #ff007f;
   --work-border-color: #777715;
+  --logo-document-size: 400%;
 }
 
 /* -------------------------------------------------------------------------------------- */
@@ -104,6 +106,7 @@ h3 {
   text-transform: uppercase;
   padding: 7px 15px;
   transition: all 0.2s ease-in-out;
+  font-size: 120%;
 }
 
 .nav a.home {
@@ -145,6 +148,7 @@ h3 {
 
 .large-image img {
   width: 100%;
+  -webkit-filter: hue-rotate(168deg);
   filter: hue-rotate(168deg);
 }
 
@@ -162,6 +166,8 @@ h3 {
 .section-work h2 {
   display: flex;
   text-transform: uppercase;
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
   writing-mode: vertical-rl;
   align-items: center;
   justify-content: center;
@@ -189,6 +195,15 @@ h3 {
 
 .p-about-intro {
   color: var(--p-intro-color);
+}
+
+.logo-document {
+  font-size: var(--logo-document-size);
+  color: #000000;
+}
+
+.avatar {
+  width: 20%;
 }
 
 /* -------------------------------------------------------------------------------------- */
@@ -255,7 +270,7 @@ h3 {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 80px 0 80px 0;
+  padding: 80px 40px 80px 40px;
   width: 100%;
 }
 
@@ -290,7 +305,7 @@ h3 {
   color: var(--p-intro-color);
 }
 
-/* ICONS */
+/* ICONS -------------------------------------------------------- */
 
 .social-links {
   list-style: none;
@@ -311,7 +326,7 @@ h3 {
   text-decoration: none;
   border: 0;
   color: #000000;
-  transition: color 0.2s;
+  transition: color 0.2s ease-in-out;
 }
 
 .social-links li a:link,
@@ -322,7 +337,7 @@ h3 {
 .logo-github,
 .logo-soundcloud,
 .logo-instagram {
-  transition: color 0.2s;
+  transition: color 0.2s ease-in-out;
 }
 
 .logo-github:hover {
@@ -337,7 +352,9 @@ h3 {
   color: #bc2a8d;
 }
 
-/* FOOTER */
+/* -------------------------------------------------------------------------------------- */
+/* SECTIONS | FOOTER */
+/* -------------------------------------------------------------------------------------- */
 
 footer {
   padding: 30px;

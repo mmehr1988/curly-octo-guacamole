@@ -1,0 +1,117 @@
+/* Big tablets to 1200px (widths smaller than the 1140px row defined for our website)*/
+@media only screen and (max-width: 1200px) {
+  .nav h1 {
+    margin-left: 10px;
+  }
+}
+
+/* Small tablets to big tablets: from 768px to 1023px*/
+@media only screen and (max-width: 1023px) {
+  html,
+  body {
+    font-size: 11px;
+  }
+
+  .large-image {
+    margin-bottom: 40px;
+  }
+
+  .section-about,
+  .section-work {
+    padding: 40px 20px 40px 0;
+  }
+
+  .section-about p {
+    letter-spacing: 0.4px;
+    line-height: 22px;
+    font-size: 140%;
+  }
+
+  :root {
+    --logo-document-size: 500%;
+  }
+
+  .work-box-small {
+    margin-top: 10px;
+  }
+
+  .section-contact {
+    padding: 40px 20px 40px 20px;
+  }
+
+  footer {
+    padding: 20px;
+  }
+}
+
+/* Small phones to small tablets: from 481px to 767px*/
+@media only screen and (max-width: 767px) {
+  html,
+  body {
+    font-size: 8px;
+  }
+
+  .nav .row {
+    display: flex;
+    flex-direction: column;
+    padding: 4px 0;
+  }
+
+  .nav a {
+    padding: 4px 8px;
+  }
+
+  h3 {
+    font-size: 130%;
+  }
+
+  .large-image {
+    margin-bottom: 20px;
+  }
+
+  :root {
+    --logo-document-size: 400%;
+    --h2-font-weight: 660%;
+  }
+
+  .section-about p {
+    letter-spacing: 0.4px;
+    line-height: 14px;
+    font-size: 100%;
+  }
+
+  .avatar {
+    width: 18%;
+  }
+
+  .section-about,
+  .section-work {
+    padding: 20px 10px 20px 0;
+  }
+
+  .section-about h2,
+  .section-work h2 {
+    margin: 10px 16px 10px 0px;
+    border-left: 2px solid var(--h2-border-color);
+  }
+
+  .work-box-large,
+  .work-box-small {
+    border: 2px solid var(--work-border-color);
+  }
+  .work-box-small {
+    margin-top: 6px;
+  }
+
+  .section-contact {
+    padding: 10px 10px 10px 10px;
+  }
+
+  footer {
+    padding: 10px;
+  }
+}
+
+/* Small phones: from 0 to 480px [Iphone Width: ] */
+@media only screen and (max-width: 480px) {
+}
