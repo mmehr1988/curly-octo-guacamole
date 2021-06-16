@@ -114,6 +114,11 @@
     font-size: 120%;
   }
 
+  h3,
+  .social-links li {
+    margin-right: 10px;
+  }
+
   footer {
     padding: 10px;
   }

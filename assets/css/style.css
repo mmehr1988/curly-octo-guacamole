@@ -47,7 +47,7 @@ h2 {
 }
 
 h3 {
-  font-size: 140%;
+  font-size: 180%;
 }
 
 h4 {
@@ -67,7 +67,7 @@ h4 {
 /* HEADER + NAVIGATION */
 /* -------------------------------------------------------------------------------------- */
 
-/* NAVIGATION | REGULAR + STICKY  -------------------------------------*/
+/* NAVIGATION | REGULAR + STICKY ------------------------------------------- */
 
 .nav a:hover,
 .nav.sticky a:hover {
@@ -115,7 +115,7 @@ h4 {
   color: var(--nav-green);
 }
 
-/* NAVIGATION | STICKY --------------------------------------------------*/
+/* NAVIGATION | STICKY ----------------------------------------------------- */
 
 .nav.sticky {
   background-color: #ffffff;
@@ -132,7 +132,7 @@ h4 {
   padding: 10px 0;
 }
 
-/* NAVIGATION | SCROLLING ANIMATION  -------------------------------------*/
+/* NAVIGATION | SCROLLING ANIMATION  --------------------------------------- */
 
 .nav a.current {
   color: var(--nav-green);
@@ -183,7 +183,7 @@ h4 {
   width: 20%;
 }
 
-/* COMMON STYLINGS --------------------------------------------------- */
+/* COMMON STYLINGS --------------------------------------------------------- */
 
 .section-about,
 .section-work {
@@ -208,7 +208,7 @@ h4 {
 /* SECTIONS | WORK */
 /* -------------------------------------------------------------------------------------- */
 
-/* MAIN FLEX CONTAINER ----------------------------------------------- */
+/* MAIN FLEX CONTAINER ----------------------------------------------------- */
 
 .work-master-container {
   display: flex;
@@ -216,13 +216,13 @@ h4 {
   justify-content: space-evenly;
 }
 
-/* LARGE IMAGE --------------------------------------------------- */
+/* LARGE IMAGE ------------------------------------------------------------- */
 
 .work-box-large {
   width: 100%;
 }
 
-/* SMALL IMAGE --------------------------------------------------- */
+/* SMALL IMAGE ------------------------------------------------------------- */
 
 .work-small-container {
   display: flex;
@@ -235,7 +235,7 @@ h4 {
   margin-top: 20px;
 }
 
-/* COMMON STYLINGS --------------------------------------------------- */
+/* COMMON STYLINGS --------------------------------------------------------- */
 
 .work-box-large,
 .work-box-small {
@@ -284,11 +284,15 @@ h4 {
 .section-contact article {
   display: flex;
 }
-.section-contact h3 {
+
+/* COMMON STYLINGS --------------------------------------------------------- */
+
+h3,
+.social-links li {
   margin-right: 20px;
 }
 
-/* ICONS -------------------------------------------------------- */
+/* ICONS ------------------------------------------------------------------- */
 
 .social-links {
   list-style: none;
@@ -297,7 +301,6 @@ h4 {
 
 .social-links li {
   display: inline-block;
-  margin-right: 20px;
 }
 
 .social-links li a:link,
@@ -340,7 +343,6 @@ footer {
   text-align: center;
   color: #ffffff;
   background-color: #000000;
-  margin-bottom: 0;
 }
 
 footer h2,
