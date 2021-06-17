@@ -1,11 +1,9 @@
-/* Big tablets to 1200px (widths smaller than the 1140px row defined for our website)*/
 @media only screen and (max-width: 1200px) {
   .nav h1 {
     margin-left: 10px;
   }
 }
 
-/* Small tablets to big tablets: from 768px to 1023px*/
 @media only screen and (max-width: 1023px) {
   html,
   body {
@@ -48,7 +46,6 @@
   }
 }
 
-/* Small phones to small tablets: from 481px to 767px*/
 @media only screen and (max-width: 767px) {
   html,
   body {
@@ -124,7 +121,6 @@
   }
 }
 
-/* Small phones: from 0 to 480px [Iphone Width: ] */
 @media only screen and (max-width: 480px) {
   html,
   body {
