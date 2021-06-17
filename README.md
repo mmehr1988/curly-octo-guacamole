@@ -76,13 +76,13 @@ Through-out the process of writing the code, I made sure to utilize the Flexbox 
 3. Main Body Section
    a. `<main>`
    b. `<section>` - 3 generic section elements to separate my About, Work, Contact sections
-   c. `<article>’
+   c. `<article>`
 4. Footer
-   a. ‘<footer>’
+   a. `<footer>`
 
 ## Summary of Code: HTML, CSS, Javascript
 
-> Header
+### Header
 
 1.  Name Of Website – Mehdi Mehrabani
 
@@ -110,9 +110,9 @@ Through-out the process of writing the code, I made sure to utilize the Flexbox 
 
 [D] CSS Animations
 
-    - `:hover` - Nav Links change color to `#1fb622’ once mouse cursor hovers over the element
+    - :hover - Nav Links change color to `#1fb622’ once mouse cursor hovers over the element
 
-> Background Image
+### Background Image
 
 1.  Photo of my Live DJ performance with my brother at the end of our project for TheShed
 
@@ -122,9 +122,9 @@ Through-out the process of writing the code, I made sure to utilize the Flexbox 
 
     - `filter: hue-rotate` - favorite styling based on research. For more effects, checkout [CSS Styling Images] (https://www.w3schools.com/css/css3_images.asp)
 
-> Main Content Section
+### Main Content Section
 
-1. Section: About
+#### Section: About
 
 [A] Content
 
@@ -151,7 +151,7 @@ Through-out the process of writing the code, I made sure to utilize the Flexbox 
 3. Other
    - `target="\_blank"` = Opening link in a new browser for `<a>` links
 
-> Section: Work
+#### Section: Work
 
 1. Images
 
@@ -159,7 +159,7 @@ Through-out the process of writing the code, I made sure to utilize the Flexbox 
 
 2. Flexbox Layout – For image positioning and properly changing sizes upon browser screen size change.
 
-> Folder Structure
+### Folder Structure
 
 [A] Main Folder
 
@@ -183,7 +183,7 @@ Through-out the process of writing the code, I made sure to utilize the Flexbox 
 1. CSS Folder
    - Normalize.css – Acts as a CSS Reset
 
-> Surprising Finds
+### Surprising Finds
 
 There were few instances that surprised me during this assignment. By this I mean, there were simple fixes for issues I had believed would require much more effort.
 
@@ -194,5 +194,7 @@ For more information, check out [CSS scroll-behavior Property](https://www.w3sch
 [B] overscroll-behavior: none;
 
 For more information, check out [overscroll-behavior](https://developer.mozilla.org/en-US/docs/Web/CSS/overscroll-behavior).
+
+# Image Of Final Assignment
 
 ![alt text](./assets/curly-octo-guacamole.png)
