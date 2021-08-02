@@ -49,7 +49,7 @@ It should be noted that I could have simply kept my portfolio very similar to th
 6. Wireframing
 7. Create Files & Structure Folder
 
-## Find Inspiration
+## 1. Find Inspiration
 
 What makes me get up and learn coding is the idea that one day I can utilize what I’ve learned to create things relate to audio / sound. More specifically, I want to learn how to use AI in the creation of sound. I know it’ll take some time until I feel comfortable to venture off into that domain, but if there is one book that has inspired me recently it’s “The Artist In The Machine” by Arthur I. Miller. The book essentially highlights the various moments in history where computers have been used to create art. It tries to answer the question of whether computers can be creative?
 
@@ -67,6 +67,36 @@ Working through some Udemy courses, there was a project that showed how to creat
 
 In summary, I used Ableton to trigger a midi piano instrument to record piano notes. Each recording would represent a square block. When user pulls my portfolio up for the first time, there is a button that user needs to click on in order to gain access to my portfolio. I then created a random triggering function to choose a number between 1 & 64. Whenever a square gets triggered the color and the piano note associated with the square will continue to play until all the 64 squares have lit up. The audio generated is listening to a piano when all keys are being hit together. This is when user automatically gets redirected to my portfolios main page. To some this might be nothing special, but for me, this was everything.
 
+See below GIF showcasing the music square color landing page.
+
 ### Portfolio Landing Page GIF
 
 ![alt text](./assets/gifs/Portfolio-Landing-Page.gif)
+
+## CSS Framework: Bootstrap 5.0
+
+Up until recently, I’ve forced myself to use pure CSS styling for all my work just to learn the blueprint of styling with pure CSS. However, with each passing week the assignments are demanding more time to be spent on the Javascript side and as a result I’ve had to start utilizing CSS frameworks to make up for the lost time.
+
+For this iteration of my portfolio I’ve decided to go with Bootstrap 5.0. On their website getting started page, they have a download package with a bunch of templates that users can utilize as a starting point. Links below.
+
+Bootstrap Website [Build fast, responsive sites with Bootstrap](https://getbootstrap.com/)
+
+Bootstrap Getting Started Page [Download Page](https://getbootstrap.com/docs/5.0/getting-started/download/)
+
+Bootstrap Template Download Link [Bootstrap Templates]]( https://github.com/twbs/bootstrap/releases/download/v5.0.2/bootstrap-5.0.2-dist.zip)
+
+I initially thought these types of CSS Frameworks would be able to solve any problem, however I soon learned that not everything is handed to you. Mistakes have been made when creating certain elements, and I’m ok with that. I know with time I will get better at using these frameworks, but the point is to force yourself to learn.
+
+## Choose Fonts & Color Theme
+
+I’ve been using google fonts family “Suez One” styling for the past couple of assignments and for me it just gives a playful feel that I relate to. In terms of color, I really enjoy playing around with color combo’s.
+
+1. NAV: For the Nav Bar, I used a purple color. I didn’t want to go with the usual black or white and for me purple just did the job.
+
+2. Section Titles: mustard yellow
+
+3. About Content: I used a combo of pink and green. Green just signifies peace and pink just takes you back to a childish like feeling.
+
+4. Dark & Light Mode: I’ve seen on many websites where they’ve used a button to allow users to either view their webpage in dark or light mode. I wanted to learn how they did this so I decided the best way to learn is to try to implement it. For this reason, at the end of the nav bar, I incorporated a button to allow users to switch between dark and light mode.
+
+5. Icon Colors vs. Contact Page: Instead of using plain writing to provide contact information. I decided to utilize icons to take user to my contact information pages. For each icon I researched the color code. For example, LinkedIn hex code is #006192.
