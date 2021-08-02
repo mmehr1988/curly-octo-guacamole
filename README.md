@@ -4,6 +4,8 @@ Assignment Summary: Portfolio Website Update
 
 Developer: Mehdi Mehrabani
 
+Portfolio Link: [Portfolio](https://mmehr1988.github.io/curly-octo-guacamole/)
+
 Time Spent To Complete: 1 Long Week
 
 I understand this README.md file is supposed to be a summary of the work that went into completing this assignment, but for me this assignment was much more.
