@@ -239,3 +239,13 @@ function navContactColor() {
     $('#navContact').removeClass('text-dark');
   }
 }
+
+// NAV TOGGLER TO COLLAPSE AFTER CLICK ------------------------------------------------
+
+$('#navbar-toggler').on('click', function () {
+  if ($('#navbar-toggler')[0].ariaExpanded) {
+    $('.navbar-nav>li>a').on('click', function () {
+      $('.navbar-collapse').collapse('hide');
+    });
+  }
+});
