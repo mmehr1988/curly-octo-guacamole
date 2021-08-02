@@ -1,139 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="stylesheet" href="./assets/css/queries.css" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <!-- JQUERY -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Suez+One&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap" rel="stylesheet" />
+
+    <!-- CSS File -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+    <!-- For the favicon error that always shows up -->
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
     <title>Mehdi Mehrabani</title>
   </head>
   <body>
-    <!----------------------------- HEADER + NAVIGATION ------------------------------>
-    <header>
-      <nav class="nav">
-        <div class="row">
-          <h1>Mehdi Mehrabani</h1>
-          <ul>
-            <li><a href="#" class="home">Home</a></li>
-            <li><a href="#section-about" class="section-about">About</a></li>
-            <li><a href="#section-work" class="section-work">Work</a></li>
-            <li><a href="#section-contact" class="section-contact">Contact</a></li>
-          </ul>
+    <!--------------------------------------------------------------->
+    <!-- LOAD PAGE -->
+    <!--------------------------------------------------------------->
+    <section id="page-load" class="page-load">
+      <div>
+        <p id="enterMsg" class="enterMsg fs-2 m-0 hidden">Welcome!</p>
+        <div class="hover-box" id="hover-box"></div>
+        <div class="audio-box" id="audio-box"></div>
+      </div>
+      <div class="page-load-btn gap-2 m-2">
+        <button id="btnEnter" type="button" class="hidden">Enter</button>
+        <button id="btnPlay" type="button" class="btn btn-lg btn-light">Play To Enter</button>
+      </div>
+    </section>
+
+    <!--------------------------------------------------------------->
+    <!-- NAV BAR -->
+    <!--------------------------------------------------------------->
+    <header id="main-header" class="main-header hidden">
+      <nav class="navbar navbar-expand-md fixed-top m-2 rounded nav-back">
+        <div class="container-fluid">
+          <h1 class="text-light m-0 p-0">Mehdi Mehrabani</h1>
+          <!-- BTN Toggle For When Screen = Small -->
+          <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- NAVBAR ITEMS -->
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <!-- ms-auto for items to the right -->
+            <ul class="navbar-nav ms-auto mb-2 mb-md-0 fs-4">
+              <li><a id="navHome" class="nav-link text-dark" aria-current="page" href="#">Home</a></li>
+              <li><a id="navAbout" class="nav-link text-light" href="#master-about">About</a></li>
+              <li><a id="navWork" class="nav-link text-light" href="#master-work">Work</a></li>
+              <li><a id="navContact" class="nav-link text-light me-2" href="#master-contact">Contact</a></li>
+            </ul>
+            <button id="toggleDarkMode" type="button" class="btn btn-dark fs-5 px-3">Dark</button>
+          </div>
         </div>
       </nav>
     </header>
-    <!----------------------------- WEBSITE MAIN IMAGE ------------------------------->
 
-    <figure class="large-image">
-      <img src="https://cdn.filepicker.io/api/file/4PxXqjq9TgaWXQabgFGo/convert?w=2048&compress=true&fit=max" alt="Saint Abdullah TheShed residency live performance picture" />
+    <!--------------------------------------------------------------->
+    <!-- WEBSITE MAIN IMAGE -->
+    <!--------------------------------------------------------------->
+    <figure id="large-image" class="large-image rounded mb-2 hidden">
+      <img src="https://cdn.filepicker.io/api/file/4PxXqjq9TgaWXQabgFGo/convert?w=2048&compress=true&fit=max" class="img-fluid rounded" alt="Saint Abdullah TheShed residency live performance picture" />
     </figure>
 
-    <main class="row content">
-      <!----------------------------- SECTION | ABOUT ---------------------------------->
-
-      <section class="section-about" id="section-about">
-        <h2>About</h2>
-        <article>
-          <p>
-            <em class="p-about-intro"><strong>Salam and welcome!</strong></em> My name is Mehdi Mehrabani and I’m one half of a musical group Saint Abdullah. In 2017, my brother and I began writing music to serve as cultural translators,<em class="p-about-key"><strong>with the goal of challenging stereotypes and acting as a conduit between unnecessary enemies.</strong></em>
-          </p>
-          <br />
-          <p>We set sail on a journey with no destination in mind other than self&#45;discovery. With no musical background, this journey seemed impossible at first, yet we understood the importance of failing and how it would be pivotal to our growth.</p>
-          <br />
-          <p>
-            I believe music and coding are like two siblings. They have their differences, but their genes are from the same parents. I’m fortunate to have the opportunity to pursue a career in Web Development,<em class="p-about-key"><strong> and my hope is to help you achieve your goals.</strong></em>
-          </p>
-
-          <img src="https://avataaars.io/?avatarStyle=Circle&topType=ShortHairShortFlat&accessoriesType=Blank&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=Black&eyeType=Default&eyebrowType=Default&mouthType=Default&skinColor=Light" class="avatar" />
-
-          <a href="./assets/documents/Mehdi Mehrabani Resume.pdf" target="_blank"><ion-icon name="document-text-outline" class="logo-document"></ion-icon></a>
-        </article>
-      </section>
-
-      <!----------------------------- SECTION | WORK ----------------------------------->
-
-      <section class="section-work" id="section-work">
-        <h2>Work</h2>
-        <div class="work-master-container">
-          <!---------------- LARGE IMAGE | TOP --------------------->
-
-          <article class="work-box-large">
-            <figure>
-              <a href="https://saintabdullah.bandcamp.com/album/ta-tash" target="_blank"><img src="https://f4.bcbits.com/img/a1532325691_16.jpg" alt="Saint Abdullah cover image for album titled Ta Tash" /></a>
-            </figure>
-            <h4>Ta Tash</h4>
-          </article>
-
-          <!---------------- SMALL IMAGE | MIDDLE ------------------>
-
-          <div class="work-small-container">
-            <article class="work-box-small">
-              <figure>
-                <a href="https://purpletapepedigree.bandcamp.com/album/stars-have-eyes" target="_blank"><img src="https://f4.bcbits.com/img/a2669757490_16.jpg" alt="Saint Abdullah cover image for album title Stars Have Eyes" /></a>
-              </figure>
-              <h4>Stars Have Eyes</h4>
-            </article>
-            <article class="work-box-small">
-              <figure>
-                <a href="https://trueaether.bandcamp.com/album/mechanical-flirtations" target="_blank"><img src="https://f4.bcbits.com/img/a0943546945_16.jpg" alt="Saint Abdullah cover image for album titled Mechanical Flirtations" /></a>
-              </figure>
-              <h4>Mechanical Flirtations</h4>
-            </article>
+    <main id="main-page" class="main-page mb-2 hidden">
+      <!--------------------------------------------------------------->
+      <!-- SECTION | ABOUT -->
+      <!--------------------------------------------------------------->
+      <div id="master-about" class="p-5 mb-2 bg-dark rounded-3">
+        <article id="section-about" class="container-fluid text-light py-4">
+          <div class="d-flex justify-content-between">
+            <h2 class="section-title display-1 fw-bold">About</h2>
+            <a href="./assets/documents/Mehdi Mehrabani Resume.pdf" target="_blank"><ion-icon name="document-text-outline" class="resume display-1"></ion-icon></a>
           </div>
+          <section class="h2">
+            <p>
+              <em class="display-5 p-about-intro"><strong>Salam and welcome!</strong></em> My name is Mehdi Mehrabani and I’m one half of a musical group Saint Abdullah. In 2017, my brother and I began writing music to serve as cultural translators,<em class="p-about-key"><strong>with the goal of challenging stereotypes and acting as a conduit between unnecessary enemies.</strong></em>
+            </p>
+            <p>We set sail on a journey with no destination in mind other than self&#45;discovery. With no musical background, this journey seemed impossible at first, yet we understood the importance of failing and how it would be pivotal to our growth.</p>
+            <p>
+              I believe music and coding are like two siblings. They have their differences, but their genes are from the same parents. I’m fortunate to have the opportunity to pursue a career in Web Development,<em class="p-about-key"><strong> and my hope is to help you achieve your goals.</strong></em>
+            </p>
 
-          <!---------------- SMALL IMAGE | BOTTOM ------------------>
-
-          <div class="work-small-container">
-            <article class="work-box-small">
+            <div>
+              <!-- AVATAR -->
               <figure>
-                <a href="https://purpletapepedigree.bandcamp.com/album/where-do-we-go-now" target="_blank"><img src="https://f4.bcbits.com/img/a1266410134_16.jpg" alt="Saint Abdullah cover image for album titled Where do we go, now?" /></a>
+                <img src="./assets/img/avatar/Avatar-Mehdi-200x200.png" alt="Avatar with brown hair, glasses and green eyes" class="rounded" />
               </figure>
-              <h4>Where do we go, now&#x3F;</h4>
-            </article>
-            <article class="work-box-small">
-              <figure>
-                <a href="https://psychicliberation.bandcamp.com/album/in-gods-image" target="_blank"><img src="https://f4.bcbits.com/img/a1352885443_16.jpg" alt="Saint Abdullah cover image for album titled In Gods Image" /></a>
-              </figure>
-              <h4>In God&#39;s Image</h4>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <!----------------------------- SECTION | CONTACT -------------------------------->
-
-      <section class="section-contact" id="section-contact">
-        <h2>Contact Me</h2>
-        <article>
-          <h3>mmehr1988&#64;gmail.com</h3>
-          <h3>646&#45;371&#45;0320</h3>
-          <ul class="social-links">
-            <li>
-              <a href="https://github.com/mmehr1988/curly-octo-guacamole" target="_blank"><ion-icon name="logo-github" class="logo-github"></ion-icon></a>
-            </li>
-            <li>
-              <a href="https://soundcloud.com/saintabdullah" target="_blank"><ion-icon name="logo-soundcloud" class="logo-soundcloud"></ion-icon></a>
-            </li>
-            <li>
-              <a href="https://www.instagram.com/saintabdullah/?hl=hu" target="_blank"><ion-icon name="logo-instagram" class="logo-instagram"></ion-icon></a>
-            </li>
-          </ul>
+              <hr />
+              <!-- ALBUMS 1 -->
+              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-6 g-1">
+                <!-- ALBUM 1 -->
+                <div class="col">
+                  <a class="card" href="https://saintabdullah.bandcamp.com/album/ta-tash" target="_blank"><img src="https://f4.bcbits.com/img/a1532325691_16.jpg" class="card rounded-2" alt="Saint Abdullah cover image for album titled Ta Tash" /></a>
+                </div>
+                <!-- ALBUM 2 -->
+                <div class="col">
+                  <a class="card" href="https://purpletapepedigree.bandcamp.com/album/stars-have-eyes" target="_blank"><img src="https://f4.bcbits.com/img/a2669757490_16.jpg" class="card rounded-2" alt="Saint Abdullah cover image for album title Stars Have Eyes" /></a>
+                </div>
+                <!-- ALBUM 3 -->
+                <div class="col">
+                  <a class="card" href="https://trueaether.bandcamp.com/album/mechanical-flirtations" target="_blank"><img src="https://f4.bcbits.com/img/a0943546945_16.jpg" class="card rounded-2" alt="Saint Abdullah cover image for album titled Mechanical Flirtations" /></a>
+                </div>
+                <!-- ALBUM 4 -->
+                <div class="col">
+                  <a class="card" href="https://purpletapepedigree.bandcamp.com/album/where-do-we-go-now" target="_blank"><img src="https://f4.bcbits.com/img/a1266410134_16.jpg" class="card rounded-2" alt="Saint Abdullah cover image for album titled Where do we go, now?" /></a>
+                </div>
+                <!-- ALBUM 5 -->
+                <div class="col">
+                  <a class="card" href="https://psychicliberation.bandcamp.com/album/in-gods-image" target="_blank"><img src="https://f4.bcbits.com/img/a1352885443_16.jpg" class="card rounded-2" alt="Saint Abdullah cover image for album titled In Gods Image" /></a>
+                </div>
+                <!-- ALBUM 6 -->
+                <div class="col">
+                  <a class="card" href="https://purpletapepedigree.bandcamp.com/album/invasive-inclinations" target="_blank"><img src="https://f4.bcbits.com/img/a1525259894_16.jpg" class="card rounded-2" alt="Saint Abdullah cover image for album titled Ta Tash" /></a>
+                </div>
+              </div>
+              <hr />
+            </div>
+          </section>
         </article>
-      </section>
+      </div>
+
+      <!--------------------------------------------------------------->
+      <!-- SECTION | WORK -->
+      <!--------------------------------------------------------------->
+
+      <div id="master-work" class="p-5 mb-2 bg-dark rounded-3">
+        <article id="section-work" class="container-fluid text-light py-4">
+          <div>
+            <h2 class="section-title display-1 fw-bold">Work</h2>
+          </div>
+          <section class="work-container">
+            <a href="https://github.com/mmehr1988/symmetrical-waddle" target="_blank"><ion-icon name="logo-github" class="logo-github"></ion-icon></a>
+
+            <object class="card rounded-5 mb-4 work-border" type="text/html" data="https://mmehr1988.github.io/symmetrical-waddle/"></object>
+          </section>
+
+          <section class="work-container">
+            <a href="https://github.com/mmehr1988/miniature-telegram" target="_blank"><ion-icon name="logo-github" class="logo-github"></ion-icon></a>
+
+            <object class="card rounded-5 mb-4 work-border" type="text/html" data="https://mmehr1988.github.io/miniature-telegram/"></object>
+          </section>
+
+          <section class="work-container">
+            <a href="https://github.com/mmehr1988/legendary-meme" target="_blank"><ion-icon name="logo-github" class="logo-github"></ion-icon></a>
+
+            <object class="card rounded-5 work-border" type="text/html" data="https://mmehr1988.github.io/legendary-meme/"></object>
+          </section>
+        </article>
+      </div>
+
+      <!--------------------------------------------------------------->
+      <!-- SECTION | CONTACT -->
+      <!--------------------------------------------------------------->
+      <div id="master-contact" class="p-5 mb-2 bg-dark rounded-3">
+        <article id="section-contact" class="container-fluid text-light py-4">
+          <div>
+            <h2 class="section-title display-1 fw-bold">Contact</h2>
+          </div>
+          <div class="row">
+            <div class="col-sm">
+              <form method="post" data-form-title="Send Email">
+                <input type="hidden" data-form-email="true" />
+                <div class="form-group mb-2">
+                  <input type="text" id="name" class="form-control" name="name" required="" placeholder="Name*" data-form-field="Name" />
+                </div>
+                <div class="form-group mb-2">
+                  <input type="email" id="email" class="form-control" name="email" required="" placeholder="Email*" data-form-field="Email" />
+                </div>
+                <div class="form-group mb-2">
+                  <input type="subject" id="subject" class="form-control" name="subject" placeholder="Subject" data-form-field="Subject" />
+                </div>
+                <div class="form-group mb-2">
+                  <textarea id="message" class="form-control" name="message" placeholder="Message" rows="7" data-form-field="Message"></textarea>
+                </div>
+                <div>
+                  <button type="submit" class="btn btn-lg btn-success">Send</button>
+                  <button type="reset" class="btn btn-lg btn-warning">Reset</button>
+                </div>
+              </form>
+            </div>
+
+            <!-- ICONS -->
+            <section class="d-flex align-items-center justify-content-between mt-4">
+              <!-- GITHUB -->
+              <a href="https://github.com/mmehr1988" target="_blank"><ion-icon name="logo-github" class="contact-github display-1"></ion-icon></a>
+
+              <!-- LinkedIn -->
+              <a href="#" target="_blank"><ion-icon name="logo-linkedin" class="contact-linkedin display-1"></ion-icon></a>
+
+              <!-- SOUNDCLOUD -->
+              <a href="https://soundcloud.com/saintabdullah" target="_blank"><ion-icon name="logo-soundcloud" class="contact-soundcloud display-1"></ion-icon></a>
+
+              <!-- INSTAGRAM -->
+              <a href="https://www.instagram.com/saintabdullah/?hl=hu" target="_blank"><ion-icon name="logo-instagram" class="contact-instagram display-1"></ion-icon></a>
+            </section>
+          </div>
+        </article>
+      </div>
     </main>
 
-    <!----------------------------- SECTION | FOOTER --------------------------------->
+    <!--------------------------------------------------------------->
+    <!-- SECTION | FOOTER -->
+    <!--------------------------------------------------------------->
 
-    <footer>
-      <h2>Made by Mehdi Mehrabani</h2>
-      <p>&copy; 2021 Ta Tash, Inc.</p>
+    <footer id="footer" class="footer text-center mb-2 py-3 bg-dark rounded hidden">
+      <div class="container">
+        <span class="text-muted">Made By Mehdi Mehrabani</span>
+      </div>
     </footer>
 
-    <!----------------------------- SCRIPTS ------------------------------------------>
-
+    <!--------------------------------------------------------------->
+    <!-- SCRIPTS -->
+    <!--------------------------------------------------------------->
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <!-- BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- ION ICONS -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.1/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule="" src="https://unpkg.com/ionicons@5.5.1/dist/ionicons/ionicons.js"></script>
-    <script src="./script.js"></script>
+    <!-- JS SCRIPT -->
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>

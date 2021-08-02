@@ -1,6 +1,6 @@
 # curly-octo-guacamole
 
-Assignment Summary: Portfolio Website
+Assignment Summary: Portfolio Website Update
 
 Developer: Mehdi Mehrabani
 

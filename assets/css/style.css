@@ -1,352 +1,351 @@
-/* -------------------------------------------------------------------------------------- */
-/* BASIC SETUP */
-/* -------------------------------------------------------------------------------------- */
+:root {
+  --bs-jquery-light: #f8f9fa;
+  --temp-white-1: #fff;
+  --temp-white-2: #ecf0f1;
+  --temp-white-3: #fafafa;
+  --temp-white-4: #f5f5f5;
+  --temp-white-5: #fef9f2;
+
+  --temp-grey-1: #d0d0d0;
+  --temp-grey-2: #aaa;
+  --temp-grey-3: #9fa4a8;
+  --temp-grey-4: #777;
+
+  --bs-jquery-orange: #fd7e14;
+  --bs-jquery-yellow: #ffc107;
+  --bs-jquery-warning: #ffc107;
+  --temp-yellow-1: #efedd6;
+  --temp-yellow-2: #f6e58d;
+  --temp-yellow-3: #f9ca24;
+  --temp-yellow-4: #ffb866;
+
+  --bs-jquery-green: #198754;
+  --bs-jquery-teal: #20c997;
+  --temp-green-1: #2ecc71;
+
+  --bs-jquery-blue: #0d6efd;
+  --bs-jquery-primary: #0d6efd;
+  --bs-jquery-info: #0dcaf0;
+  --bs-jquery-cyan: #0dcaf0;
+  --temp-blue-1: #add8e6;
+  --temp-blue-2: #3498db;
+  --temp-blue-3: #3494e4;
+  --temp-blue-4: #5290f9;
+  --temp-blue-5: #2a86ba;
+  --temp-blue-6: #4682b4;
+  --temp-blue-7: #2c3e50;
+
+  --bs-jquery-dark: #212529;
+  --bs-jquery-gray-dark: #343a40;
+  --bs-jquery-gray: #6c757d;
+  --temp-black-1: #111;
+  --temp-black-2: #000;
+  --temp-black-3: #1d1d1d;
+  --temp-black-4: #302d2b;
+  --temp-black-5: #252e33;
+
+  --bs-jquery-pink: #d63384;
+  --temp-pink-1: #ff007f;
+  --temp-pink-2: #fd3555;
+
+  --bs-jquery-red: #dc3545;
+
+  --bs-jquery-indigo: #6610f2;
+  --bs-jquery-purple: #6f42c1;
+  --temp-purple-1: #476ce4;
+  --temp-purple-2: #686de0;
+  --temp-purple-3: #4c2885;
+  --temp-purple-4: #2a2a72;
+  --temp-purple-5: #800080;
+
+  /* Portfolio Colors */
+  --black-1: #000000;
+  --white-1: #ffffff;
+
+  /* NAV */
+  --nav-back-color: #800080;
+  --nav-toggler-color: rgba(255, 255, 255, 0.463);
+
+  /* Section: About */
+  --sec-title-color: #e3b505;
+  --about-resume-color: #b90784;
+  --about-intro-color: #ff007f;
+  --about-keywords-color: #2ecc71;
+
+  /* Section: Work */
+  --work-github-current: #bd2c00;
+  --work-github-hover: #a12701;
+}
 
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
-html,
+/* MAIN PAGE ITEMS ---------------------------------------------------- */
+
 body {
-  font-family: 'Roboto', sans-serif;
-  color: #000000;
-  font-size: 16px;
-
-  /* Simple trick to create a smooth scrolling effect */
-  scroll-behavior: smooth;
-  /*  For no screen bounce with over scrolling */
-  -ms-scroll-chaining: none;
-  overscroll-behavior: none;
+  background-color: var(--black-1);
+  font-family: 'Suez One', serif;
+  /* For items to sit well with navbar  */
+  margin: 5.2rem 0.5rem 0 0.5rem;
+  transition: all 0.5s ease-in;
 }
 
-/* -------------------------------------------------------------------------------------- */
-/* CSS VARIABLE */
-/* -------------------------------------------------------------------------------------- */
-
-:root {
-  --nav-green: #1fb622;
-  --border-color: #777715;
-  --p-keywords-color: #116813;
-  --p-intro-color: #ff007f;
+/* For Dark Mode */
+body.light {
+  background-color: var(--white-1);
+  font-family: 'Suez One', serif;
+  /* For items to sit well with navbar  */
+  margin: 5.2rem 0.5rem 0 0.5rem;
 }
 
-/* -------------------------------------------------------------------------------------- */
-/* HEADERS + PARAGRAPHS */
-/* -------------------------------------------------------------------------------------- */
+/* JQUERY -----------------------------------------------------------------*/
+/* Disable jQuery UI Focus Glow */
 
-h1 {
-  font-size: 260%;
-  color: #ffffff;
+*:focus {
+  outline: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 
-h2 {
-  text-transform: uppercase;
-  font-size: 1000%;
+/* REUSABLE ITEMS ---------------------------------------------------- */
+.hidden {
+  display: none;
 }
 
-h3 {
-  font-size: 180%;
+/* PAGE LOAD ITEMS ---------------------------------------------------- */
+
+#btnPlay:focus,
+#btnPlay:active {
+  outline: none;
+  box-shadow: none;
 }
 
-h4 {
-  font-size: 120%;
-}
-
-/* -------------------------------------------------------------------------------------- */
-/* REUSABLE ITEMS */
-/* -------------------------------------------------------------------------------------- */
-
-.row {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-/* -------------------------------------------------------------------------------------- */
-/* HEADER + NAVIGATION */
-/* -------------------------------------------------------------------------------------- */
-
-/* NAVIGATION | REGULAR + STICKY ------------------------------------------- */
-
-.nav a:hover,
-.nav.sticky a:hover {
-  color: var(--nav-green);
-  font-weight: bold;
-}
-
-/* NAVIGATION | REGULAR ----------------------------------------------------------------- */
-
-.nav {
-  position: fixed;
-  background-color: #000000;
+.page-load {
+  position: absolute;
+  margin: auto;
   top: 0;
-  left: 0;
   right: 0;
-  transition: all 0.2s ease-in-out;
-  z-index: 1;
+  bottom: 0;
+  left: 0;
+  max-width: 400px;
+  height: 100px;
+  text-align: center;
+  color: var(--temp-pink-1);
 }
 
-.nav .row {
+/* SOUND + COLORS */
+.hover-box {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 0;
-  transition: all 0.2s ease-in-out;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-.nav ul {
+.square {
+  background-color: #1d1d1d;
+  /* box-shadow: 0 0 2px var(--black-1); */
+  height: 20px;
+  width: 20px;
+  margin: 2px;
+  transition: 2s ease;
+}
+
+.square:hover {
+  transition-duration: 0s;
+}
+
+.page-load-btn {
   display: flex;
-  list-style-type: none;
-  align-items: center;
   justify-content: center;
 }
 
-.nav a {
-  color: #ffffff;
-  text-decoration: none;
-  text-transform: uppercase;
-  padding: 7px 15px;
-  transition: all 0.2s ease-in-out;
-  font-size: 120%;
+/* BUTTONS ---------------------------------------- */
+button:focus,
+button:active {
+  outline: none;
+  box-shadow: none;
 }
 
-.nav a.home {
-  color: var(--nav-green);
+button:active {
+  transform: scale(1.2);
+  transition: 0.15s transform;
 }
 
-/* NAVIGATION | STICKY ----------------------------------------------------- */
-
-.nav.sticky {
-  background-color: #ffffff;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
-  z-index: 1;
+#toggleDarkMode {
+  transition: all 0.5s ease-in;
 }
 
-.nav.sticky a,
-.nav.sticky h1 {
-  color: #000000;
+#toggleDarkMode:active {
+  transform: scale(1.2);
+  transition: 0.15s transform;
 }
 
-.nav.sticky .row {
-  padding: 10px 0;
+#toggleDarkMode:focus,
+#toggleDarkMode:active {
+  outline: none;
+  box-shadow: none;
 }
 
-/* NAVIGATION | SCROLLING ANIMATION  --------------------------------------- */
-
-.nav a.current {
-  color: var(--nav-green);
-  transition: all 0.2s ease-in-out;
+/* BOOTSRAP --------------------------------------- */
+.bg-dark,
+.btn-dark {
+  background-color: var(--black-1) !important;
 }
 
-/* -------------------------------------------------------------------------------------- */
-/* WEBSITE MAIN IMAGE */
-/* -------------------------------------------------------------------------------------- */
-
-.large-image {
-  width: 100%;
-  margin-bottom: 80px;
+/* BOOTSRAP --------------------------------------- */
+/* To fix the slight change in height between media sizes */
+/* Transition between light and dark */
+nav {
+  min-height: 4.2rem;
+  transition: all 0.5s ease-in;
+  background-color: var(--nav-back-color);
 }
 
-.large-image img {
-  width: 100%;
-  -webkit-filter: hue-rotate(168deg);
-  filter: hue-rotate(168deg);
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.463)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
-/* -------------------------------------------------------------------------------------- */
-/* SECTIONS | ABOUT */
-/* -------------------------------------------------------------------------------------- */
+.custom-toggler.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.705);
+  border-width: 3px;
+  background-color: rgba(0, 0, 0, 0.486);
+}
 
-.section-about p {
-  text-transform: uppercase;
+.custom-toggler:active,
+.navbar-toggler:active {
+  transform: scale(1.2);
+  transition: 0.15s transform;
+}
+
+/* .custom-toggler:hover {
+  color: var(--nav-bar-toggler);
+  transition: 0.15s color;
+} */
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+/* SECTION: ALL ---------------------------------- */
+
+#master-about,
+#master-work,
+#master-contact,
+#footer {
+  transition: all 0.5s ease-in;
+}
+
+/* SECTION: ABOUT + WORK ---------------------------------- */
+
+.section-title {
+  color: var(--sec-title-color);
+}
+
+/* SECTION: ABOUT ---------------------------------- */
+
+#section-about {
   letter-spacing: 1px;
-  line-height: 40px;
-  font-size: 180%;
-  font-weight: 300;
+  transition: all 0.5s ease-in;
 }
 
-.p-about-key {
-  color: var(--p-keywords-color);
+.display-1 {
+  font-size: 6rem;
 }
 
 .p-about-intro {
-  color: var(--p-intro-color);
+  color: var(--about-intro-color);
 }
 
-.logo-document {
-  font-size: 400%;
-  color: #b406b4;
+.p-about-key {
+  color: var(--about-keywords-color);
 }
 
-.avatar {
-  width: 20%;
+.resume {
+  color: var(--about-resume-color);
 }
 
-/* COMMON STYLINGS --------------------------------------------------------- */
-
-.section-about,
-.section-work {
-  display: flex;
-  padding: 80px 40px 80px 0;
+.bg-secondary {
+  color: #000;
 }
 
-.section-about h2,
-.section-work h2 {
-  display: flex;
-  -webkit-writing-mode: vertical-rl;
-  -ms-writing-mode: tb-rl;
-  writing-mode: vertical-rl;
-  align-items: center;
-  justify-content: center;
-  transform: rotateZ(180deg);
-  margin: 20px 40px 20px 0px;
-  border-left: 4px solid var(--border-color);
-}
+/* SECTION: WORK ---------------------------------- */
 
-/* -------------------------------------------------------------------------------------- */
-/* SECTIONS | WORK */
-/* -------------------------------------------------------------------------------------- */
-
-/* MAIN FLEX CONTAINER ----------------------------------------------------- */
-
-.work-master-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-
-/* LARGE IMAGE ------------------------------------------------------------- */
-
-.work-box-large {
+object {
+  height: 600px;
   width: 100%;
 }
 
-/* SMALL IMAGE ------------------------------------------------------------- */
-
-.work-small-container {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
+.work-border {
+  border-width: 0.2rem;
 }
 
-.work-box-small {
-  width: 49%;
-  margin-top: 20px;
-}
-
-/* COMMON STYLINGS --------------------------------------------------------- */
-
-.work-box-large,
-.work-box-small {
-  overflow: hidden;
-  justify-content: center;
-  border: 4px solid var(--border-color);
-}
-
-.work-box-large a img,
-.work-box-small a img {
-  width: 100%;
-  margin: -35% 0;
-  opacity: 0.7;
-  transition: all 0.3s ease-in-out;
-}
-
-.work-box-large a img:hover,
-.work-box-small a img:hover {
-  opacity: 1;
-  transition: all 0.3s ease-in-out;
-}
-
-h4 {
+/* PROJECTS */
+.work-container {
   position: relative;
-  color: #ffffff;
-  background-color: rgba(0, 0, 0, 0.8);
-  width: fit-content;
-  padding: 6px;
-  border: 2px solid var(--border-color);
 }
 
-/* -------------------------------------------------------------------------------------- */
-/* SECTIONS | CONTACT */
-/* -------------------------------------------------------------------------------------- */
+.logo-github {
+  position: absolute;
+  z-index: 1;
+  left: 0.3%;
+  top: 89%;
 
-.section-contact {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  padding: 80px 40px 80px 40px;
-  width: 100%;
-}
-
-.section-contact article {
-  display: flex;
-}
-
-/* COMMON STYLINGS --------------------------------------------------------- */
-
-h3,
-.social-links li {
-  margin-right: 20px;
-}
-
-/* ICONS ------------------------------------------------------------------- */
-
-.social-links {
-  list-style: none;
-  float: right;
-}
-
-.social-links li {
-  display: inline-block;
-}
-
-.social-links li a:link,
-.social-links li a:visited {
-  text-decoration: none;
-  color: #000000;
-  transition: color 0.2s ease-in-out;
-}
-
-.social-links li a:link,
-.social-links li a:visited {
-  font-size: 200%;
-}
-
-.logo-github,
-.logo-soundcloud,
-.logo-instagram {
-  transition: color 0.2s ease-in-out;
+  font-size: 400%;
+  cursor: pointer;
+  color: var(--work-github-current);
 }
 
 .logo-github:hover {
+  color: var(--work-github-hover);
+}
+
+#navAbout {
+  color: #000;
+}
+
+/* LOGO COLORS */
+
+.contact-github,
+.contact-soundcloud,
+.contact-instagram,
+.contact-linkedin {
+  font-size: 6rem;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+}
+
+.contact-github {
   color: #4078c0;
 }
 
-.logo-soundcloud:hover {
+.contact-linkedin {
+  color: #2867b2;
+}
+
+.contact-soundcloud {
+  color: #cc5b26;
+}
+
+.contact-instagram {
+  color: #923876;
+}
+
+.contact-github:hover {
+  color: #3494e4;
+}
+
+.contact-linkedin:hover {
+  color: #3494e4;
+}
+
+.contact-soundcloud:hover {
   color: #fe5000;
 }
 
-.logo-instagram:hover {
+.contact-instagram:hover {
   color: #bc2a8d;
-}
-
-/* -------------------------------------------------------------------------------------- */
-/* SECTIONS | FOOTER */
-/* -------------------------------------------------------------------------------------- */
-
-footer {
-  padding: 30px;
-  clear: both;
-  text-align: center;
-  color: #ffffff;
-  background-color: #000000;
-}
-
-footer h2,
-p {
-  font-size: 160%;
-  text-transform: none;
 }
