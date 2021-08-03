@@ -105,6 +105,12 @@ The second requirement for this assignment is to take time and polish up our Git
 
    b. [Welcome! Badges 4 README.md Profile](https://github.com/alexandresanlim/Badges4-README.md-Profile)
 
+4. Historical Assignment File Updates – gitignore + MIT LICENSE
+
+   a. gitignore: I recently learned the purpose of a gitignore file and how to ignore the macOS specific .DS_Store upon pushing repository updates. Having only included the file for our group project, I decided for consistency purposes to do the same for all previous repositories.
+
+   b. MIT LICENSE: This will be my first time reading about the MIT License document and why someone would want to include it in their repository. I’m definitely the type of person that would want others to benefit from the products I make so this was a plus on the legal side of things. For the same reason as the gitignore file, I decided to go back and include the license for all previous assignments.
+
 ## 2. Find Inspiration
 
 What makes me get up and learn coding is the idea that one day I can utilize what I’ve learned to create things relate to audio / sound. More specifically, I want to learn how to use AI in the creation of sound. I know it’ll take some time until I feel comfortable to venture off into that domain, but if there is one book that has inspired me recently it’s “The Artist In The Machine” by Arthur I. Miller. The book essentially highlights the various moments in history where computers have been used to create art. It tries to answer the question of whether computers can be creative?
