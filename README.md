@@ -100,3 +100,43 @@ I’ve been using google fonts family “Suez One” styling for the past couple
 4. Dark & Light Mode: I’ve seen on many websites where they’ve used a button to allow users to either view their webpage in dark or light mode. I wanted to learn how they did this so I decided the best way to learn is to try to implement it. For this reason, at the end of the nav bar, I incorporated a button to allow users to switch between dark and light mode.
 
 5. Icon Colors vs. Contact Page: Instead of using plain writing to provide contact information. I decided to utilize icons to take user to my contact information pages. For each icon I researched the color code. For example, LinkedIn hex code is #006192.
+
+## Homework Requirements
+
+Update Portfolio To Showcase Completed Projects
+
+### Requirement #1: Update Portfolio To Showcase Bootcamp Coursework
+
+The first requirement for this assignment is to update our portfolio to showcase at least 2 assignments and our first project. Should be noted that we’ve completed a total of 4 assignments and 1 group project since our first portfolio iteration.
+
+#### Assignments + Project Chosen
+
+1. Project 1: DAHM
+   a. Summary Of Project: Digital mixer which uses four imported youtube and allows users to adjust video parameters to create unique sounds.
+   b. Github Repo: symmetrical-waddle
+   c. Github Repository Link: [symmetrical-waddle Repo](https://github.com/mmehr1988/symmetrical-waddle)
+   d. Github App Link: [symmetrical-waddle App](https://mmehr1988.github.io/symmetrical-waddle/)
+2. Assignment 1: Code Quiz
+   a. Summary Of Project: An app that cycles through questions and records user answers and outputs a score based on the time taken to complete quiz.
+   b. Github Repo: miniature-telegram
+   c. Github Repository Link: [miniature-telegram Repo](https://github.com/mmehr1988/miniature-telegram)
+   d. Github App Link: [miniature-telegram App](https://mmehr1988.github.io/miniature-telegram/)
+3. Assignment 2: Weather App
+   a. Summary: A weather dashboard created using third party API which allows users to input city in which they want to get weather data.
+   b. Github Repo: legendary-meme
+   c. Github Repository Link: [legendary-meme Repo](https://github.com/mmehr1988/legendary-meme)
+   d. Github App Link: [legendary-meme App](https://mmehr1988.github.io/legendary-meme/)
+
+### Requirement #2: Update Github Profile
+
+The second requirement for this assignment is to take time and polish up our Github pages. Since employers will inevitably use our Github page to get to know potential future hires, this task should not be underestimated.
+
+#### Github Page Updates
+
+1. Update Profile – I love the idea of an avatar, and decided to update my profile photo with an Avatar that looks similar.
+
+2. Biography – I didn’t want to write a story here. I decided to state where in the coding world I place myself and what my passion in life is. The result being, “Full stack developer who loves telling stories with sound.”
+
+3. Github Profile README – While researching unique profiles to get inspiration, I came across this process of using a README.md as a message board.
+   a. Badges For Github README Profile: In addition, the below Github repo walks you through how to add badges to your profile page. Found this to be extremely useful when combined with an `<a>` you can redirect users to your specific profiles on various platforms.
+   b. [Welcome! Badges 4 README.md Profile](https://github.com/alexandresanlim/Badges4-README.md-Profile)
