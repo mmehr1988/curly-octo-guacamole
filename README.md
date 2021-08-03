@@ -217,8 +217,40 @@ I’ve been using google fonts family “Suez One” styling for the past couple
 
 2.  `<section>` | Page Load
 
-    - The page load is separated into two components. The first is related to the square colors and the second are the buttons allowing user to enter the portfolio page.
+    - The page load is separated into two components. The first is related to the square and audio elements. The second is related to the buttons that allowing for browser page switch.
 
     - Coding Square Colors + Audio
 
-      a. DOMContentLoaded + `function init()` - Created an addEventlistener to run a function called init. The init function is a for loop that appends elements in the DOM for both the square colors and audio elements.
+      a. DOMContentLoaded + `function init()` - Created an addEventlistener to run a function called init. The init function houses a for loop that appends the square and audio elements in the DOM.
+
+      b. Random Colorization - The colorization of the squares uses the `Math.random()` function to return a color hex code from an array called `colors`.
+
+      c. Audio Sounds - One way I learned how to trigger audio sounds was by setting two attributes when the audio element is being appended in the DOM: `data-file` and `src`.
+
+      i. `data-file` - The data-file attribute is used to assign a name for each appended element.
+
+      ii. `src` - The src attribute is used to defines the relative path to each audio sample.
+
+    - Playing Colors + Audio
+
+      a. Click Event + `setInterval` - I created a click event to listen to when the user clicks on the enter button. Once clicked, a `setInterval` will begin to trigger the `autoAudioPlay()` function every 62 milliseconds.
+
+      - Please note that I've tested the functionality on my iPhone and it's a little slow. I wanted to make it apparent that I'm aware that something needs to be updated to the code, but given time constraint I accepted the slow response when used on mobiles for now. I will be updating it on future iterations. On desktop, I haven't ran into any trouble.
+
+      b. `autoAudioPlay()` - The `autoAudioPlay()` function handles the triggering of the colors + audio samples and keeps track of how many square colors have been lit up. The purpose of the tracker is so that the when all squares have been lit, the browser switches between the loading page and the main page.
+
+3.  `<header>` + `<nav>`
+
+    - The header element was used to house the navbar elements. Majority of the html was taken from Bootstrap, but I made sure to add a little bit of my own flavor.
+
+    - NAV Link Color Change vs. Scroll
+
+      a. For the first iteration of my portfolio, I failed at implementing a sticky navigation. At the time we had not learned any javascript and it made coding the navigation that much harder. However, this time around I'm proud to say I was able to code the changing of colors properly. Or at least to my satisfaction.
+
+      b. Calculating Section Position Relative To Browser - I was able to pull the section heights and positiong in the browser to change the color of each link when the nav bar reach each section.
+
+4.  `<figure>`
+
+    - For the background image I used the same photo as last time which showcases my brother and I playing for our residency at the TheShed.
+
+    - Check out link for more info (https://theshed.org/program/103-open-call-saint-abdullah)
