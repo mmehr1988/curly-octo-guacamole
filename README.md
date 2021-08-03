@@ -254,3 +254,23 @@ I’ve been using google fonts family “Suez One” styling for the past couple
     - For the background image I used the same photo as last time which showcases my brother and I playing for our residency at the TheShed.
 
     - Check out link for more info (https://theshed.org/program/103-open-call-saint-abdullah)
+
+5.  Section: About
+
+    - The About section did not change much. I liked the way I had it before except that I moved the resume icon to the top right of the section. I also changed the avatar to be less pixelated.
+
+6.  Section: Work
+
+    - For this section I researched if there was a way to insert my project and assignments directly into my portfolio. For me this made the most sense in that user can directly test out the app without moving to a new webpage. I also used the github icon on the bottom left corner of each `<object>` just in case user wants to go to the repo page.
+
+7.  Section Contact:
+
+    - I wanted to implement a direct way for user to be able to contact me and landed on created a contact form to be filled out and sent to my personal email once submit button is clicked.
+
+    - As of right now, it is not working, and this is due to time constraints and level of server knowledge. I will use this method in the future and have it working.
+
+    - In addition, I used the same methodology as last time where I used Icons to link my online presence.
+
+# GIF Of Final Portfolio Update #2
+
+![alt text](./assets/gifs/Portfolio-Update-2.gif)
