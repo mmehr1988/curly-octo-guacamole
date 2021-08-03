@@ -39,7 +39,7 @@ It should be noted that I could have simply kept my portfolio very similar to th
 
 # Steps Taken to Complete Assignment
 
-## Initial Steps
+### Initial Steps
 
 1. Review Homework Requirements
 2. Find Inspiration
@@ -49,7 +49,7 @@ It should be noted that I could have simply kept my portfolio very similar to th
 6. Wireframing
 7. Create Files & Structure Folder
 
-## 1. Homework Requirements
+## Homework Requirements
 
 Update Portfolio To Showcase Completed Projects
 
@@ -111,7 +111,7 @@ The second requirement for this assignment is to take time and polish up our Git
 
    b. MIT LICENSE: This will be my first time reading about the MIT License document and why someone would want to include it in their repository. I’m definitely the type of person that would want others to benefit from the products I make so this was a plus on the legal side of things. For the same reason as the gitignore file, I decided to go back and include the license for all previous assignments.
 
-## 2. Find Inspiration
+## Find Inspiration
 
 What makes me get up and learn coding is the idea that one day I can utilize what I’ve learned to create things relate to audio / sound. More specifically, I want to learn how to use AI in the creation of sound. I know it’ll take some time until I feel comfortable to venture off into that domain, but if there is one book that has inspired me recently it’s “The Artist In The Machine” by Arthur I. Miller. The book essentially highlights the various moments in history where computers have been used to create art. It tries to answer the question of whether computers can be creative?
 
@@ -135,7 +135,7 @@ See below GIF showcasing the music square color landing page.
 
 ![alt text](./assets/gifs/Portfolio-Landing-Page.gif)
 
-## 3. CSS Framework: Bootstrap 5.0
+## CSS Framework: Bootstrap 5.0
 
 Up until recently, I’ve forced myself to use pure CSS styling for all my work just to learn the blueprint of styling with pure CSS. However, with each passing week the assignments are demanding more time to be spent on the Javascript side and as a result I’ve had to start utilizing CSS frameworks to make up for the lost time.
 
@@ -149,7 +149,7 @@ Bootstrap Template Download Link [Bootstrap Templates]](https://github.com/twbs/
 
 I initially thought these types of CSS Frameworks would be able to solve any problem, however I soon learned that not everything is handed to you. Mistakes have been made when creating certain elements, and I’m ok with that. I know with time I will get better at using these frameworks, but the point is to force yourself to learn.
 
-## 4. Choose Fonts & Color Theme
+## Choose Fonts & Color Theme
 
 I’ve been using google fonts family “Suez One” styling for the past couple of assignments and for me it just gives a playful feel that I relate to. In terms of color, I really enjoy playing around with color combo’s.
 
@@ -162,3 +162,63 @@ I’ve been using google fonts family “Suez One” styling for the past couple
 4. Dark & Light Mode: I’ve seen on many websites where they’ve used a button to allow users to either view their webpage in dark or light mode. I wanted to learn how they did this so I decided the best way to learn is to try to implement it. For this reason, at the end of the nav bar, I incorporated a button to allow users to switch between dark and light mode.
 
 5. Icon Colors vs. Contact Page: Instead of using plain writing to provide contact information. I decided to utilize icons to take user to my contact information pages. For each icon I researched the color code. For example, LinkedIn hex code is #006192.
+
+## File Structure
+
+1. File: Index.html
+2. File: LICENSE
+3. File: README.md
+4. Folder: assets
+
+   a. Folder: audio
+
+   - All piano audio file recording used for landing page
+
+   b. Folder: css
+
+   - File: style.css
+
+   - File: queries.css
+
+   c. Folder: documents
+
+   - File: resume
+
+   d. Folder: gifs
+
+   - File: gif of portfolio
+
+   e. Folder: img
+
+   - Folder: avatar
+
+     - File: A 200x200 avatar photo used in personal portfolio
+
+   f. Folder: js
+
+   - File: script.js
+
+5. Folder: vendors
+
+   - File: normalize.css
+
+## Process Of Writing
+
+1.  `<head>`
+
+    - In the head of the document you will find the following `<link>`
+
+      a. Bootstrap 5.0
+      b. Jquery
+      c. Google Fonts
+      d. Normalize CSS
+      e. style.css
+      f. queries.css
+
+2.  `<section>` | Page Load
+
+    - The page load is separated into two components. The first is related to the square colors and the second are the buttons allowing user to enter the portfolio page.
+
+    - Coding Square Colors + Audio
+
+      a. DOMContentLoaded + `function init()` - Created an addEventlistener to run a function called init. The init function is a for loop that appends elements in the DOM for both the square colors and audio elements.

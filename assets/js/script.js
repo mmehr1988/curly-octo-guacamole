@@ -21,17 +21,6 @@ function init() {
     audioSquare.setAttribute('src', src);
     audioSquare.volume = 0.2;
 
-    // Event Listener for mouseover to set square color
-    square.addEventListener('mouseover', function () {
-      setColor(square);
-      audioSquare.play();
-    });
-
-    // Event Listener for mouseout to remove square color
-    square.addEventListener('mouseout', function () {
-      removeColor(square);
-    });
-
     // to create DOM square element
     hoverBox.appendChild(square);
     // to create DOM audio element
@@ -39,17 +28,11 @@ function init() {
   }
 }
 
-// Function to set colors of each square on user "mouseover"
+// Function to set colors of each square when called
 function setColor(element) {
   const color = getRandomColor();
   element.style.background = color;
   element.style.boxShadow = `0 0 2px ${color}, 0 0 10px ${color}`;
-}
-
-// Function to reset the square background upon user "mouseout"
-function removeColor(element) {
-  element.style.background = '#1d1d1d';
-  element.style.boxShadow = '0 0 2px #000';
 }
 
 // Function to choose random color for each square
