@@ -6,23 +6,9 @@ Developer: Mehdi Mehrabani
 
 Portfolio Link: [Portfolio](https://mmehr1988.github.io/curly-octo-guacamole/)
 
-For this weeks assignment, we were tasked with updating our initial portfolio website. The first time around, I was at the beginning of my bootcamp journey and there weren’t any actual projects I could highlight. Since then, I’ve learned many lessons that have resulted in frustration on some nights, but also exhilaration on other nights. The biggest lesson has been not to give up and just continue to research the problem until you have found a solution or a creative detour. It’s in these scenarios that I’ve learned the most.
-
-The accumulation of all these late nights have resulted in the completion of multiple projects that I’m proud of and want future employers to view. Looking back, I fully understand the importance of each assignment and how each one contributes to the learning of coding fundamentals.
+For this weeks assignment, we were tasked with updating our initial portfolio website. The first time around, I was at the beginning of my bootcamp journey and there weren’t any projects to showcase. Since then, we've completed a handful of assignments and 1 group project that I’m proud of and want future employers to view.
 
 Before attempting to build the first iteration of what my potential portfolio will look like, I went online to research the importance of a web developers’ portfolio. I took this assignment as an opportunity to test the things I’ve learned from both the bootcamp and self-study.
-
-In summary, a web developers’ portfolio should at minimum have 3 sections:
-
-1. About Me: Who are you?
-2. Projects: What can you do?
-3. Contact Me: How can we reach?
-
-For more information, check out [Ultimate Guide to Creating a Programmer Portfolio](https://www.springboard.com/blog/careersmithing/programmer-portfolio/).
-
-Applying the same methodology as I did the first time, I wanted to use this opportunity to allow myself to try out the new skills that I’ve acquired since then.
-
-It should be noted that I could have simply kept my portfolio very similar to the first iteration but that would be playing it safe. These assignments are testing ground for new ideas and I wanted to make sure no matter what, I stay true to who I am.
 
 # Summary of Assignment
 
@@ -34,8 +20,8 @@ It should be noted that I could have simply kept my portfolio very similar to th
 4. Bootstrap
 5. Jquery
 6. Youtube
-7. Ableton [Digital Audio Workstation]
-8. Stackoverflow
+7. Stackoverflow
+8. Ableton [Digital Audio Workstation]
 
 # Steps Taken to Complete Assignment
 
@@ -51,13 +37,9 @@ It should be noted that I could have simply kept my portfolio very similar to th
 
 ## Homework Requirements
 
-Update Portfolio To Showcase Completed Projects
+Update Portfolio For Completed Projects
 
 ### Requirement #1: Update Portfolio To Showcase Bootcamp Coursework
-
-The first requirement for this assignment is to update our portfolio to showcase at least 2 assignments and our first project. Should be noted that we’ve completed a total of 4 assignments and 1 group project since our first portfolio iteration.
-
-#### Assignments + Project Chosen
 
 1. Project 1: DAHM
 
@@ -91,17 +73,13 @@ The first requirement for this assignment is to update our portfolio to showcase
 
 ### Requirement #2: Update Github Profile
 
-The second requirement for this assignment is to take time and polish up our Github pages. Since employers will inevitably use our Github page to get to know potential future hires, this task should not be underestimated.
+1. Update Github Profile Picture – I decided to use an avatar as my profile picture.
 
-#### Github Page Updates
+2. Biography – I decided to state where in the coding world I place myself and what my passion in life is. The result being, “Full stack developer who loves telling stories with sound.”
 
-1. Update Profile – I love the idea of an avatar, and decided to update my profile photo with an Avatar that looks similar.
+3. Github Profile README – While researching unique profiles to get inspiration, I came across this process of using a README.md as a message board. I decided I wanted to implement the same for my project.
 
-2. Biography – I didn’t want to write a story here. I decided to state where in the coding world I place myself and what my passion in life is. The result being, “Full stack developer who loves telling stories with sound.”
-
-3. Github Profile README – While researching unique profiles to get inspiration, I came across this process of using a README.md as a message board.
-
-   a. Badges For Github README Profile: In addition, the below Github repo walks you through how to add badges to your profile page. Found this to be extremely useful when combined with an `<a>` you can redirect users to your specific profiles on various platforms.
+   a. Badges For Github README Profile: The below Github repo walks you through how to add badges to your profile page. Combining the badges with `<a>` links, you can create a clickable link that redirects users.
 
    b. [Welcome! Badges 4 README.md Profile](https://github.com/alexandresanlim/Badges4-README.md-Profile)
 
@@ -109,11 +87,11 @@ The second requirement for this assignment is to take time and polish up our Git
 
    a. gitignore: I recently learned the purpose of a gitignore file and how to ignore the macOS specific .DS_Store upon pushing repository updates. Having only included the file for our group project, I decided for consistency purposes to do the same for all previous repositories.
 
-   b. MIT LICENSE: This will be my first time reading about the MIT License document and why someone would want to include it in their repository. I’m definitely the type of person that would want others to benefit from the products I make so this was a plus on the legal side of things. For the same reason as the gitignore file, I decided to go back and include the license for all previous assignments.
+   b. MIT LICENSE: For the same reason as the gitignore file, I decided to go back and include the license for all previous assignments.
 
 ## Find Inspiration
 
-What makes me get up and learn coding is the idea that one day I can utilize what I’ve learned to create things relate to audio / sound. More specifically, I want to learn how to use AI in the creation of sound. I know it’ll take some time until I feel comfortable to venture off into that domain, but if there is one book that has inspired me recently it’s “The Artist In The Machine” by Arthur I. Miller. The book essentially highlights the various moments in history where computers have been used to create art. It tries to answer the question of whether computers can be creative?
+What makes me get up and learn coding is the idea that one day I can utilize what I’ve learned to create apps related to audio. More specifically, I want to learn how to use AI to create stories with sound. It’ll take some time until I feel comfortable to venture off into that domain, but if there is one book that has inspired me recently it’s “The Artist In The Machine” by Arthur I. Miller. The book essentially highlights the various moments in history where computers have been used to create art. It tries to answer the question of whether computers can be creative?
 
 I’ll reserve my opinion for another time, but the important takeaway is to allow yourself to want to be surprised.
 
@@ -121,13 +99,13 @@ If you’re interested, here is the link to the about page [About The Artist in 
 
 For the reasons above, I wanted to use sound in some sort of fashion when building my portfolio.
 
-Per my research on portfolio design, I did not come across many developers utilizing a loading page, but for me it fit perfect.
+Per my research on portfolio design, there weren't many developers utilizing a loading page, but for me it fit perfect.
 
-First, if someone decides to use a loading page, it better be creative or you’re just wasting time. Second, if it so happens to be creative and the employer viewing it doesn’t want to wait and watch, then you and that employer aren’t meant to be.
+Working through some Udemy courses, I came across a project that showed how to create a block of small squares to light up with a random color when the users mouse hovered over the square.
 
-Working through some Udemy courses, there was a project that showed how to create a block of small squares to light up with a random color whenever the users mouse moved across the square. I must have spent a good half hour just moving my mouse over the squares before thinking if there was a way to trigger sounds along with the colors. I started researching and realized there actually are ways and began to figure out how to code the two together.
+I must have spent a good half hour just moving my mouse over the squares before thinking if there was a way to trigger sounds along with the colors. I started researching and realized there actually are ways and began to figure out how to code the two together.
 
-In summary, I used Ableton to trigger a midi piano instrument to record piano notes. Each recording would represent a square block. When user pulls my portfolio up for the first time, there is a button that user needs to click on in order to gain access to my portfolio. I then created a random triggering function to choose a number between 1 & 64. Whenever a square gets triggered the color and the piano note associated with the square will continue to play until all the 64 squares have lit up. The audio generated is listening to a piano when all keys are being hit together. This is when user automatically gets redirected to my portfolios main page. To some this might be nothing special, but for me, this was everything.
+In summary, I used Ableton to trigger a midi piano instrument to record piano notes. Each recording would represent a square block. When user pulls my portfolio up for the first time, there is a button that user needs to click on in order to gain access to my portfolio. I then created a random triggering function to choose a number between 1 & 64. Whenever a square gets triggered the color and the piano note associated with the square will continue to play until all the 64 squares have lit up. Once all squares are lit up, user automatically gets redirected to the main portfolio page. To some this might be nothing special, but for me, this was everything.
 
 See below GIF showcasing the music square color landing page.
 
@@ -151,17 +129,15 @@ I initially thought these types of CSS Frameworks would be able to solve any pro
 
 ## Choose Fonts & Color Theme
 
-I’ve been using google fonts family “Suez One” styling for the past couple of assignments and for me it just gives a playful feel that I relate to. In terms of color, I really enjoy playing around with color combo’s.
+I’ve been using google fonts family “Suez One” styling for the past couple of assignments and for me it just gives a playful feel that I relate to.
 
-1. NAV: For the Nav Bar, I used a purple color. I didn’t want to go with the usual black or white and for me purple just did the job.
+1. NAV: For the NAV Bar, I used a purple color. I didn’t want to go with the usual black or white and for me purple just did the job.
 
-2. Section Titles: mustard yellow
+2. Section Titles: Mustard yellow in my opinion looks good on both black and white backgrounds.
 
-3. About Content: I used a combo of pink and green. Green just signifies peace and pink just takes you back to a childish like feeling.
+3. About Content: I used a combo of pink and green to highlight important text. For the main text, I used black when in light mode and white when in dark mode. See below.
 
-4. Dark & Light Mode: I’ve seen on many websites where they’ve used a button to allow users to either view their webpage in dark or light mode. I wanted to learn how they did this so I decided the best way to learn is to try to implement it. For this reason, at the end of the nav bar, I incorporated a button to allow users to switch between dark and light mode.
-
-5. Icon Colors vs. Contact Page: Instead of using plain writing to provide contact information. I decided to utilize icons to take user to my contact information pages. For each icon I researched the color code. For example, LinkedIn hex code is #006192.
+4. Dark & Light Mode: I've seen the dark mode functionality be used on many websites. As a result, I wanted to learn how they did this so I decided the best way to learn is to try to implement it. For this reason, at the end of the NAV bar, I incorporated a button to allow users to switch between dark and light mode.
 
 ## File Structure
 
@@ -217,37 +193,35 @@ I’ve been using google fonts family “Suez One” styling for the past couple
 
 2.  `<section>` | Page Load
 
-    - The page load is separated into two components. The first is related to the square and audio elements. The second is related to the buttons that allowing for browser page switch.
+    - The page load section is separated into two components. The first is related to the square and audio elements. The second is related to the buttons that allow for browser page switch.
 
-    - Coding Square Colors + Audio
+    [A] Coding Square Colors + Audio
 
-      a. DOMContentLoaded + `function init()` - Created an addEventlistener to run a function called init. The init function houses a for loop that appends the square and audio elements in the DOM.
+    a. DOMContentLoaded + `function init()` - Created an addEventlistener to run a function called init. The init function houses a for loop that appends the square and audio elements in the DOM.
 
-      b. Random Colorization - The colorization of the squares uses the `Math.random()` function to return a color hex code from an array called `colors`.
+    b. Random Colorization - The colorization of the squares uses the `Math.random()` function to return a color hex code from an array called `colors`.
 
-      c. Audio Sounds - One way I learned how to trigger audio sounds was by setting two attributes when the audio element is being appended in the DOM: `data-file` and `src`.
+    c. Audio Sounds - One way I learned how to trigger audio sounds was by setting two attributes when the audio element is being appended in the DOM: `data-file` and `src`.
 
-      i. `data-file` - The data-file attribute is used to assign a name for each appended element.
+    i. `data-file` - The data-file attribute is used to assign a name for each appended element.
 
-      ii. `src` - The src attribute is used to defines the relative path to each audio sample.
+    ii. `src` - The src attribute is used to defines the relative path to each audio sample.
 
-    - Playing Colors + Audio
+    [B] Playing Colors + Audio
 
-      a. Click Event + `setInterval` - I created a click event to listen to when the user clicks on the enter button. Once clicked, a `setInterval` will begin to trigger the `autoAudioPlay()` function every 62 milliseconds.
+    a. Click Event + `setInterval` - I created a click event to listen to when the user clicks on the "Play To Enter" button. Once clicked, a `setInterval` will begin to trigger the `autoAudioPlay()` function every 62 milliseconds.
 
-      - Please note that I've tested the functionality on my iPhone and it's a little slow. I wanted to make it apparent that I'm aware that something needs to be updated to the code, but given time constraint I accepted the slow response when used on mobiles for now. I will be updating it on future iterations. On desktop, I haven't ran into any trouble.
+    - Please note that I've tested the functionality on my iPhone and it's a little slow. I wanted to make it apparent that I'm aware that something needs to be updated to the code, but given time constraint I accepted the slow response when used on mobiles for now. I will be updating it on future iterations. On desktop, I haven't ran into any trouble.
 
-      b. `autoAudioPlay()` - The `autoAudioPlay()` function handles the triggering of the colors + audio samples and keeps track of how many square colors have been lit up. The purpose of the tracker is so that the when all squares have been lit, the browser switches between the loading page and the main page.
+    b. `autoAudioPlay()` - The `autoAudioPlay()` function handles the triggering of the colors + audio samples and keeps track of how many square colors have been lit up. The purpose of the tracker is so that the when all squares have been lit, the browser switches between the loading page and the main page.
 
 3.  `<header>` + `<nav>`
 
-    - The header element was used to house the navbar elements. Majority of the html was taken from Bootstrap, but I made sure to add a little bit of my own flavor.
+    [A] NAV Link Color Change vs. Scroll Position
 
-    - NAV Link Color Change vs. Scroll
+    a. For the first iteration of my portfolio, I failed at implementing a sticky navigation. At the time we had not learned any javascript and it made coding the navigation that much harder. However, this time around I'm proud to say I was able to code the changing of colors properly.
 
-      a. For the first iteration of my portfolio, I failed at implementing a sticky navigation. At the time we had not learned any javascript and it made coding the navigation that much harder. However, this time around I'm proud to say I was able to code the changing of colors properly. Or at least to my satisfaction.
-
-      b. Calculating Section Position Relative To Browser - I was able to pull the section heights and positiong in the browser to change the color of each link when the nav bar reach each section.
+    b. Calculating Section Position Relative To Browser - I was able to pull the section heights and positiong in the browser to change the color of each link when the nav bar reach each section.
 
 4.  `<figure>`
 
