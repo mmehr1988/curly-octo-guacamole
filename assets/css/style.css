@@ -105,7 +105,9 @@ body.light {
 
 /* BUTTONS ---------------------------------------- */
 button:focus,
-button:active {
+button:active,
+/* Added the below as the reset button stayed in focus after click which I did not want */
+button:focus:not(:focus-visible) {
   outline: none;
   box-shadow: none;
 }
@@ -160,11 +162,6 @@ nav {
   transform: scale(1.2);
   transition: 0.15s transform;
 }
-
-/* .custom-toggler:hover {
-  color: var(--nav-bar-toggler);
-  transition: 0.15s color;
-} */
 
 .navbar-toggler:focus,
 .navbar-toggler:active,
