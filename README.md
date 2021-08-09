@@ -202,7 +202,7 @@ I’ve been using google fonts family “Suez One” styling for the past couple
 
     - Images For App Highlights - For this section I used images to showcase the projects I wanted to highlight in my portfolio.
 
-    - Modal For Github Repo + Live App - I used modals to pop up for when users click on each image. The modal showcases the apps titel, a short summary. At the bottom of each modal, there are two links users can click on. First being the github reposity, and the second is the link to the live app.
+    - Modal For Github Repo + Live App - I used modals to pop up for when users click on each image. The modal showcases the apps title, a short summary. At the bottom of each modal there are two links users can click on. First being the github reposity, and the second is the link to the live app.
 
 6.  Section Contact:
 
@@ -212,4 +212,4 @@ I’ve been using google fonts family “Suez One” styling for the past couple
 
 # GIF Of Final Portfolio Update #2
 
-![alt text](./assets/gifs/Portfolio-Update-2.gif)
+![alt text](./assets/gifs/Portfolio-GIF.gif)
