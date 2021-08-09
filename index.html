@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <!-- JQUERY -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Suez+One&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap" rel="stylesheet" />
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" type="text/css" href="./vendors/css/normalize.css" />
+    <!-- CSS File -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/queries.css" />
+    <!-- For the favicon error that always shows up -->
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+    <title>Mehdi Mehrabani</title>
+  </head>
+  <body>
+    <!--------------------------------------------------------------->
+    <!-- NAV BAR -->
+    <!--------------------------------------------------------------->
+    <header id="main-header" class="main-header">
+      <nav class="navbar navbar-expand-md fixed-top m-2 rounded nav-back">
+        <div class="container-fluid">
+          <h1 class="text-dark m-0 p-0">Mehdi Mehrabani</h1>
+          <!-- BTN Toggle For When Screen = Small -->
+          <button id="navbar-toggler" class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- NAVBAR ITEMS -->
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <!-- ms-auto for items to the right -->
+            <ul class="navbar-nav ms-auto mb-2 mb-md-0 fs-4">
+              <li><a id="navHome" class="nav-link navActiveLink" href="#">Home</a></li>
+              <li><a id="navAbout" class="nav-link" href="#master-about">About</a></li>
+              <li><a id="navWork" class="nav-link" href="#master-work">Work</a></li>
+              <li><a id="navContact" class="nav-link" href="#master-contact">Contact</a></li>
+              <li><a id="navResume" class="nav-link me-2" href="#master-resume">Resume</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--------------------------------------------------------------->
+    <!-- WEBSITE MAIN IMAGE -->
+    <!--------------------------------------------------------------->
+    <figure id="large-image" class="large-image rounded mb-2">
+      <img src="https://cdn.filepicker.io/api/file/4PxXqjq9TgaWXQabgFGo/convert?w=2048&compress=true&fit=max" class="img-fluid rounded" alt="Saint Abdullah TheShed residency live performance picture" />
+    </figure>
+
+    <main id="main-page" class="main-page mb-2">
+      <!--------------------------------------------------------------->
+      <!-- SECTION | ABOUT -->
+      <!--------------------------------------------------------------->
+      <div id="master-about" class="p-5 mb-2 rounded-3 hidden">
+        <article id="section-about" class="container-fluid text-light py-4">
+          <div class="d-flex justify-content-between">
+            <h2 class="section-title display-1 fw-bold">About</h2>
+          </div>
+          <section class="h3">
+            <p>
+              <em class="display-6 p-about-intro"><strong>Salam and welcome!</strong></em> My name is Mehdi Mehrabani and I’m one half of a musical group Saint Abdullah. In 2017, my brother and I began writing music to serve as cultural translators,<em class="p-about-key"><strong>with the goal of challenging stereotypes and acting as a conduit between unnecessary enemies.</strong></em>
+            </p>
+            <p>We set sail on a journey with no destination in mind other than self&#45;discovery. With no musical background, this journey seemed impossible at first, yet we understood the importance of failing and how it would be pivotal to our growth.</p>
+            <p>
+              I believe music and coding are like two siblings. They have their differences, but their genes are from the same parents. I’m fortunate to have the opportunity to pursue a career in Web Development,<em class="p-about-key"><strong> and my hope is to help you achieve your goals.</strong></em>
+            </p>
+
+            <div>
+              <!-- AVATAR -->
+              <figure>
+                <img src="./assets/img/avatar/Avatar-Mehdi-200x200.png" alt="Avatar with brown hair, glasses and green eyes" class="rounded avatar" />
+              </figure>
+            </div>
+          </section>
+        </article>
+      </div>
+
+      <!--------------------------------------------------------------->
+      <!-- SECTION | WORK -->
+      <!--------------------------------------------------------------->
+
+      <div id="master-work" class="p-5 mb-2 rounded-3 hidden">
+        <article id="section-work" class="container-fluid text-light py-4">
+          <div>
+            <h2 class="section-title display-1 fw-bold">Work</h2>
+          </div>
+
+          <div class="album py-2">
+            <div class="container">
+              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 g-3">
+                <!-- Project 1: DAHM -->
+                <div class="col">
+                  <div class="card workContainer">
+                    <img id="work-image-1" src="./assets/img/work/project-1-DAHM.png" alt="Project DAHM app image" />
+                  </div>
+                  <!-- MODAL -->
+                  <div class="modal fade" id="work-1-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title text-dark" id="exampleModalLabel">Project DAHM</h5>
+                        </div>
+                        <div class="modal-body text-dark">Digital mixer which uses four imported youtube videos and allows users to adjust video parameters to create unique sounds.</div>
+                        <div class="modal-footer">
+                          <button type="button" id="work-1-btn-repo" class="btn btn-modal" data-dismiss="modal">Github Repo</button>
+                          <button type="button" id="work-1-btn-app" class="btn btn-modal">Live App</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Project 1: DAHM -->
+                <!-- Assignment: CODE QUIZ -->
+                <div class="col">
+                  <div class="card workContainer">
+                    <img id="work-image-2" src="./assets/img/work/miniature-telegram.png" alt="Code Quiz app image" />
+                  </div>
+                  <!-- MODAL -->
+                  <div class="modal fade" id="work-2-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title text-dark" id="exampleModalLabel">Code Quiz App</h5>
+                        </div>
+                        <div class="modal-body text-dark">A multiple choice app that cycles through questions and records user answers and outputs a score based on the time taken to complete quiz</div>
+                        <div class="modal-footer">
+                          <button type="button" id="work-2-btn-repo" class="btn btn-modal" data-dismiss="modal">Github Repo</button>
+                          <button type="button" id="work-2-btn-app" class="btn btn-modal">Live App</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Assignment: CODE QUIZ -->
+                <!-- Assignment: WEATHER DASHBOARD -->
+                <div class="col">
+                  <div class="card workContainer">
+                    <img id="work-image-3" src="./assets/img/work/legendary-meme.png" alt="Code Quiz app image" />
+                  </div>
+                  <!-- MODAL -->
+                  <div class="modal fade" id="work-3-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title text-dark" id="exampleModalLabel">Weather Dashboard App</h5>
+                        </div>
+                        <div class="modal-body text-dark">Weather Dashboard App allows you to input a city name and receive up to date weather data.</div>
+                        <div class="modal-footer">
+                          <button type="button" id="work-3-btn-repo" class="btn btn-modal" data-dismiss="modal">Github Repo</button>
+                          <button type="button" id="work-3-btn-app" class="btn btn-modal">Live App</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Assignment: WEATHER DASHBOARD -->
+                <!-- Assignment: WORK DAY SCHEDULER -->
+                <div class="col">
+                  <div class="card workContainer">
+                    <img id="work-image-4" src="./assets/img/work/automatic-doodle.png" alt="Code Quiz app image" />
+                  </div>
+                  <!-- MODAL -->
+                  <div class="modal fade" id="work-4-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title text-dark" id="exampleModalLabel">Work Day Scheduler App</h5>
+                        </div>
+                        <div class="modal-body text-dark">Work Day Scheduler allows you to save personal notes for each hour of the day.</div>
+                        <div class="modal-footer">
+                          <button type="button" id="work-4-btn-repo" class="btn btn-modal" data-dismiss="modal">Github Repo</button>
+                          <button type="button" id="work-4-btn-app" class="btn btn-modal">Live App</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Assignment: WORK DAY SCHEDULER -->
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!--------------------------------------------------------------->
+      <!-- SECTION | CONTACT -->
+      <!--------------------------------------------------------------->
+      <div id="master-contact" class="p-5 mb-2 rounded-3 hidden">
+        <article id="section-contact" class="container-fluid text-light py-4">
+          <div>
+            <h2 class="section-title display-1 fw-bold">Contact</h2>
+          </div>
+          <div class="row">
+            <section class="display-6">Email: tatash.my@gmail.com</section>
+            <section class="display-6">Phone: 646-371-0320</section>
+            <!-- ICONS -->
+            <section class="d-flex align-items-center justify-content-between mt-4">
+              <!-- GITHUB -->
+              <a href="https://github.com/mmehr1988" target="_blank"><ion-icon name="logo-github" class="contact-github display-1"></ion-icon></a>
+
+              <!-- LINKEDIN -->
+              <a href="https://www.linkedin.com/in/mehdi-mehrabani-810327219/" target="_blank"><ion-icon name="logo-linkedin" class="contact-linkedin display-1"></ion-icon></a>
+
+              <!-- SOUNDCLOUD -->
+              <a href="https://soundcloud.com/saintabdullah" target="_blank"><ion-icon name="logo-soundcloud" class="contact-soundcloud display-1"></ion-icon></a>
+
+              <!-- INSTAGRAM -->
+              <a href="https://www.instagram.com/saintabdullah/?hl=hu" target="_blank"><ion-icon name="logo-instagram" class="contact-instagram display-1"></ion-icon></a>
+            </section>
+          </div>
+        </article>
+      </div>
+
+      <!-- MODAL - RESUME -->
+      <div class="modal fade" id="resume-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Mehdi Mehrabani Resume</h5>
+            </div>
+            <div class="modal-body">
+              <img src="./assets/img/resume/Mehdi-Mehrabani-Resume.png" frameborder="0" width="100%" height="100%" class="workContainer" />
+            </div>
+            <div class="modal-footer">
+              <a href="./assets/documents/Mehdi Mehrabani Resume.pdf" download="Mehdi Mehrabani Resume" class="btn btn-modal btn-resume">Download</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!--------------------------------------------------------------->
+    <!-- SCRIPTS -->
+    <!--------------------------------------------------------------->
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <!-- BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- ION ICONS -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.1/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.5.1/dist/ionicons/ionicons.js"></script>
+    <!-- JS SCRIPT -->
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>

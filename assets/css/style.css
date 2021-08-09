@@ -1,0 +1,207 @@
+:root {
+  /* Portfolio Colors */
+  --black-1: #000000;
+  --white-1: #ffffff;
+
+  --page-load-pink: #ff007f;
+
+  /* NAV */
+  --nav-back-color: #ffffff;
+  --nav-green: #1fb622;
+  --nav-green-hover: #1a941c;
+
+  /* Section: About */
+  --sec-title-color: #e3b505;
+  --about-resume-color: #b90784;
+  --about-intro-color: #ff007f;
+  --about-keywords-color: #2ecc71;
+
+  /* Section: Work */
+  --work-github-current: #bd2c00;
+  --work-github-hover: #a12701;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* MAIN PAGE ITEMS ---------------------------------------------------- */
+
+body {
+  background-color: var(--black-1);
+  font-family: 'Suez One', serif;
+}
+
+/* JQUERY -----------------------------------------------------------------*/
+/* Disable jQuery UI Focus Glow */
+
+*:focus {
+  outline: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+/* REUSABLE ITEMS ---------------------------------------------------- */
+.hidden {
+  display: none;
+}
+
+/* BUTTONS ---------------------------------------- */
+button:focus,
+button:active,
+/* Added the below as the reset button stayed in focus after click which I did not want */
+button:focus:not(:focus-visible),
+a:focus:not(:focus-visible) {
+  outline: none;
+  box-shadow: none;
+}
+
+/* Background Image ------------------------------- */
+
+#large-image {
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+}
+#large-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  min-width: 40%;
+  min-height: 40%;
+}
+
+/* BOOTSRAP --------------------------------------- */
+/* To fix the slight change in height between media sizes */
+/* Transition between light and dark */
+nav {
+  min-height: 4.2rem;
+  background-color: var(--nav-back-color);
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.463)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.705);
+  border-width: 3px;
+  background-color: rgba(0, 0, 0, 0.486);
+}
+
+.custom-toggler:active,
+.navbar-toggler:active {
+  transform: scale(1.2);
+  transition: 0.15s transform;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+/* NAV FOCUS COLOR ---------------------------------- */
+
+.nav-link,
+.nav-link:active {
+  color: var(--black-1);
+}
+
+.nav-link:hover,
+.btn-modal:hover {
+  color: var(--nav-green-hover);
+}
+
+.navActiveLink,
+.nav-link:focus {
+  color: var(--nav-green);
+}
+
+/* SECTION TITLE COLORS ---------------------------------- */
+
+.section-title {
+  color: var(--sec-title-color);
+}
+
+/* SECTION: ABOUT ---------------------------------- */
+
+#section-about {
+  letter-spacing: 1px;
+}
+
+.display-1 {
+  font-size: 6rem;
+}
+
+.p-about-intro {
+  color: var(--about-intro-color);
+}
+
+.p-about-key {
+  color: var(--about-keywords-color);
+}
+
+/* SECTION: WORK ---------------------------------- */
+
+.workContainer {
+  border: 3px solid grey;
+  border-radius: 5px;
+}
+
+/* SECTION: CONTACT ---------------------------------- */
+
+/* LOGO COLORS */
+
+.contact-github,
+.contact-soundcloud,
+.contact-instagram,
+.contact-linkedin {
+  font-size: 6rem;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+}
+
+.contact-github {
+  color: #4078c0;
+}
+
+.contact-linkedin {
+  color: #006192;
+}
+
+.contact-soundcloud {
+  color: #cc5b26;
+}
+
+.contact-instagram {
+  color: #923876;
+}
+
+.contact-github:hover {
+  color: #3494e4;
+}
+
+.contact-linkedin:hover {
+  color: #3494e4;
+}
+
+.contact-soundcloud:hover {
+  color: #fe5000;
+}
+
+.contact-instagram:hover {
+  color: #bc2a8d;
+}
+
+.btn-resume,
+.btn-resume:active {
+  border: none;
+}
