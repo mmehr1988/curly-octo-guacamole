@@ -162,20 +162,6 @@ $('#work-4-btn-app').click(function () {
   window.open('https://mmehr1988.github.io/automatic-doodle/');
 });
 
-// MODEL RESUME ----------------------------------------------
-
-// To Create Modal On Image Click
-var myModalResume = new bootstrap.Modal($('#resume-modal'), {});
-
-$('#navResume').click(function (e) {
-  myModalResume.show();
-});
-
-// To Open Repo Page
-// $('#resume-download-btn').click(function (e) {
-//   // browser.downloads.download({ href: 'assets/documents/Mehdi Mehrabani Resume.pdf' });
-// });
-
 ///////////////////////////////////////////////////////////////
 // NAV TOGGLER
 ///////////////////////////////////////////////////////////////
