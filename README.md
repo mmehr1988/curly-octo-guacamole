@@ -8,8 +8,6 @@ Portfolio Link: [Portfolio](https://mmehr1988.github.io/curly-octo-guacamole/)
 
 For this weeks assignment, we were tasked with updating our initial portfolio website. The first time around, I was at the beginning of my bootcamp journey and there weren’t any projects to showcase. Since then, we've completed a handful of assignments and 1 group project that I’m proud of and want future employers to view.
 
-Before attempting to build the first iteration of what my potential portfolio will look like, I went online to research the importance of a web developers’ portfolio. I took this assignment as an opportunity to test the things I’ve learned from both the bootcamp and self-study.
-
 # Summary of Assignment
 
 ## Resources used to complete this assignment:
@@ -21,7 +19,6 @@ Before attempting to build the first iteration of what my potential portfolio wi
 5. Jquery
 6. Youtube
 7. Stackoverflow
-8. Ableton [Digital Audio Workstation]
 
 # Steps Taken to Complete Assignment
 
@@ -82,7 +79,7 @@ Update Portfolio For Completed Projects
 
 ### Requirement #2: Update Github Profile
 
-1. Update Github Profile Picture – I decided to use an avatar as my profile picture.
+1. Update Github Profile Picture – Used an avatar as my profile picture.
 
 2. Biography – I decided to state where in the coding world I place myself and what my passion in life is. The result being, “Full stack developer who loves telling stories with sound.”
 
@@ -203,7 +200,9 @@ I’ve been using google fonts family “Suez One” styling for the past couple
 
 5.  Section: Work
 
-    - For this section I researched if there was a way to insert my project and assignments directly into my portfolio. For me this made the most sense in that user can directly test out the app without moving to a new webpage. I also used the github icon on the bottom left corner of each `<object>` just in case user wants to go to the repo page.
+    - Images For App Highlights - For this section I used images to showcase the projects I wanted to highlight in my portfolio.
+
+    - Modal For Github Repo + Live App - I used modals to pop up for when users click on each image. The modal showcases the apps titel, a short summary. At the bottom of each modal, there are two links users can click on. First being the github reposity, and the second is the link to the live app.
 
 6.  Section Contact:
 
