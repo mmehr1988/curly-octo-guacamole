@@ -28,12 +28,11 @@ Before attempting to build the first iteration of what my potential portfolio wi
 ### Initial Steps
 
 1. Review Homework Requirements
-2. Find Inspiration
-3. Choose CSS Framework
-4. Choose Fonts & Color Theme
-5. Gather Learning Material
-6. Wireframing
-7. Create Files & Structure Folder
+2. Choose CSS Framework
+3. Choose Fonts & Color Theme
+4. Gather Learning Material
+5. Wireframing
+6. Create Files & Structure Folder
 
 ## Homework Requirements
 
@@ -88,30 +87,6 @@ Update Portfolio For Completed Projects
    a. gitignore: I recently learned the purpose of a gitignore file and how to ignore the macOS specific .DS_Store upon pushing repository updates. Having only included the file for our group project, I decided for consistency purposes to do the same for all previous repositories.
 
    b. MIT LICENSE: For the same reason as the gitignore file, I decided to go back and include the license for all previous assignments.
-
-## Find Inspiration
-
-What makes me get up and learn coding is the idea that one day I can utilize what I’ve learned to create apps related to audio. More specifically, I want to learn how to use AI to create stories with sound. It’ll take some time until I feel comfortable to venture off into that domain, but if there is one book that has inspired me recently it’s “The Artist In The Machine” by Arthur I. Miller. The book essentially highlights the various moments in history where computers have been used to create art. It tries to answer the question of whether computers can be creative?
-
-I’ll reserve my opinion for another time, but the important takeaway is to allow yourself to want to be surprised.
-
-If you’re interested, here is the link to the about page [About The Artist in the Machine](https://www.artistinthemachine.net/about/).
-
-For the reasons above, I wanted to use sound in some sort of fashion when building my portfolio.
-
-Per my research on portfolio design, there weren't many developers utilizing a loading page, but for me it fit perfect.
-
-Working through some Udemy courses, I came across a project that showed how to create a block of small squares to light up with a random color when the users mouse hovered over the square.
-
-I must have spent a good half hour just moving my mouse over the squares before thinking if there was a way to trigger sounds along with the colors. I started researching and realized there actually are ways and began to figure out how to code the two together.
-
-In summary, I used Ableton to trigger a midi piano instrument to record piano notes. Each recording would represent a square block. When user pulls my portfolio up for the first time, there is a button that user needs to click on in order to gain access to my portfolio. I then created a random triggering function to choose a number between 1 & 64. Whenever a square gets triggered the color and the piano note associated with the square will continue to play until all the 64 squares have lit up. Once all squares are lit up, user automatically gets redirected to the main portfolio page. To some this might be nothing special, but for me, this was everything.
-
-See below GIF showcasing the music square color landing page.
-
-### Portfolio Landing Page GIF
-
-![alt text](./assets/gifs/Portfolio-Landing-Page.gif)
 
 ## CSS Framework: Bootstrap 5.0
 
@@ -194,26 +169,6 @@ I’ve been using google fonts family “Suez One” styling for the past couple
 2.  `<section>` | Page Load
 
     - The page load section is separated into two components. The first is related to the square and audio elements. The second is related to the buttons that allow for browser page switch.
-
-    [A] Coding Square Colors + Audio
-
-    a. DOMContentLoaded + `function init()` - Created an addEventlistener to run a function called init. The init function houses a for loop that appends the square and audio elements in the DOM.
-
-    b. Random Colorization - The colorization of the squares uses the `Math.random()` function to return a color hex code from an array called `colors`.
-
-    c. Audio Sounds - One way I learned how to trigger audio sounds was by setting two attributes when the audio element is being appended in the DOM: `data-file` and `src`.
-
-    i. `data-file` - The data-file attribute is used to assign a name for each appended element.
-
-    ii. `src` - The src attribute is used to defines the relative path to each audio sample.
-
-    [B] Playing Colors + Audio
-
-    a. Click Event + `setInterval` - I created a click event to listen to when the user clicks on the "Play To Enter" button. Once clicked, a `setInterval` will begin to trigger the `autoAudioPlay()` function every 62 milliseconds.
-
-    - Please note that I've tested the functionality on my iPhone and it's a little slow. I wanted to make it apparent that I'm aware that something needs to be updated to the code, but given time constraint I accepted the slow response when used on mobiles for now. I will be updating it on future iterations. On desktop, I haven't ran into any trouble.
-
-    b. `autoAudioPlay()` - The `autoAudioPlay()` function handles the triggering of the colors + audio samples and keeps track of how many square colors have been lit up. The purpose of the tracker is so that the when all squares have been lit, the browser switches between the loading page and the main page.
 
 3.  `<header>` + `<nav>`
 
