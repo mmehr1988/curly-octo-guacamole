@@ -10,6 +10,10 @@
   --nav-green: #1fb622;
   --nav-green-hover: #1a941c;
 
+  /* NAV Toggler */
+  --nav-toggler-back: #000000;
+  --nav-toggler-border: rgba(255, 255, 255, 0.705);
+
   /* Section: About */
   --sec-title-color: #e3b505;
   --about-resume-color: #b90784;
@@ -19,6 +23,9 @@
   /* Section: Work */
   --work-github-current: #bd2c00;
   --work-github-hover: #a12701;
+
+  /* Modal BTN */
+  --modal-btn-hover: #29e02c;
 }
 
 * {
@@ -90,9 +97,10 @@ nav {
 }
 
 .custom-toggler.navbar-toggler {
-  border-color: rgba(255, 255, 255, 0.705);
+  border-color: var(--nav-toggler-border);
   border-width: 3px;
-  background-color: rgba(0, 0, 0, 0.486);
+  /* background-color: rgba(0, 0, 0); */
+  background-color: var(--nav-toggler-back);
 }
 
 .custom-toggler:active,
@@ -116,8 +124,7 @@ nav {
   color: var(--black-1);
 }
 
-.nav-link:hover,
-.btn-modal:hover {
+.nav-link:hover {
   color: var(--nav-green-hover);
 }
 
@@ -154,6 +161,11 @@ nav {
 .workContainer {
   border: 3px solid grey;
   border-radius: 5px;
+}
+
+/* MODAL BTNS */
+.btn-modal:hover {
+  color: var(--modal-btn-hover);
 }
 
 /* SECTION: CONTACT ---------------------------------- */
