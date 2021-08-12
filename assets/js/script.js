@@ -1,5 +1,5 @@
 ///////////////////////////////////////////////////////////////
-// NAV Color Change + Section Hide & Unhide
+// NAV COLOR CHANGE + SECTION HIDE & UNHIDE
 ///////////////////////////////////////////////////////////////
 
 $('nav ul li a').click(function () {
@@ -25,80 +25,29 @@ $('nav ul li a').click(function () {
 // MODAL WINDOWS
 ///////////////////////////////////////////////////////////////
 
-// MODEL WORK 1 ----------------------------------------------
+$('#work-image-1, #work-image-2, #work-image-3, #work-image-4').click(function (e) {
+  var modalNum = $(this)[0].id.substr(-1);
+  var workModal = String(`#work-${modalNum}-modal`);
+  var workRepoBtn = String(`#work-${modalNum}-btn-repo`);
+  var workAppBtn = String(`#work-${modalNum}-btn-app`);
 
-// To Create Modal On Image Click
-var myModal1 = new bootstrap.Modal($('#work-1-modal'), {});
+  var workName = $(this).attr('value');
+  var workRepoLink = String(`https://github.com/mmehr1988/${workName}`);
+  var workAppLink = String(`https://mmehr1988.github.io/${workName}`);
 
-$('#work-image-1').click(function (e) {
-  myModal1.show();
-});
+  // To Open Modal
+  var myModal = new bootstrap.Modal($(workModal), {});
+  myModal.show();
 
-// To Open Repo Page
-$('#work-1-btn-repo').click(function () {
-  window.open('https://github.com/mmehr1988/symmetrical-waddle');
-});
+  // To Open Repo Page
+  $(workRepoBtn).click(function () {
+    window.open(workRepoLink);
+  });
 
-// To Open App Live
-$('#work-1-btn-app').click(function () {
-  window.open('https://mmehr1988.github.io/symmetrical-waddle/');
-});
-
-// MODEL WORK 2 ----------------------------------------------
-
-// To Create Modal On Image Click
-var myModal2 = new bootstrap.Modal($('#work-2-modal'), {});
-
-$('#work-image-2').click(function (e) {
-  myModal2.show();
-});
-
-// To Open Repo Page
-$('#work-2-btn-repo').click(function () {
-  window.open('https://github.com/mmehr1988/miniature-telegram');
-});
-
-// To Open App Live
-$('#work-2-btn-app').click(function () {
-  window.open('https://mmehr1988.github.io/miniature-telegram/');
-});
-
-// MODEL WORK 3 ----------------------------------------------
-
-// To Create Modal On Image Click
-var myModal3 = new bootstrap.Modal($('#work-3-modal'), {});
-
-$('#work-image-3').click(function (e) {
-  myModal3.show();
-});
-
-// To Open Repo Page
-$('#work-3-btn-repo').click(function () {
-  window.open('https://github.com/mmehr1988/legendary-meme');
-});
-
-// To Open App Live
-$('#work-3-btn-app').click(function () {
-  window.open('https://mmehr1988.github.io/legendary-meme/');
-});
-
-// MODEL WORK 4 ----------------------------------------------
-
-// To Create Modal On Image Click
-var myModal4 = new bootstrap.Modal($('#work-4-modal'), {});
-
-$('#work-image-4').click(function (e) {
-  myModal4.show();
-});
-
-// To Open Repo Page
-$('#work-4-btn-repo').click(function () {
-  window.open('https://github.com/mmehr1988/automatic-doodle');
-});
-
-// To Open App Live
-$('#work-4-btn-app').click(function () {
-  window.open('https://mmehr1988.github.io/automatic-doodle/');
+  // To Open App Page
+  $(workAppBtn).click(function () {
+    window.open(workAppLink);
+  });
 });
 
 ///////////////////////////////////////////////////////////////
