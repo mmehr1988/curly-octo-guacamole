@@ -36,7 +36,7 @@ for (let i = 0; i < $('.work-image').length; i++) {
       var myModal = new bootstrap.Modal($(workModal), {});
       myModal.show();
 
-      // Click event on modal buttons
+      // To Open Repo Link Or App Link
       $('.btn-modal').click(function () {
         var workName = $(this).attr('name');
         var workRepoLink = String(`https://github.com/mmehr1988/${workName}`);
@@ -49,6 +49,11 @@ for (let i = 0; i < $('.work-image').length; i++) {
           // To Open App Page
           window.open(workAppLink);
         }
+      });
+
+      // To Close Modal
+      $('.btn-close').click(function () {
+        myModal.hide();
       });
     });
 }

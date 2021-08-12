@@ -168,6 +168,11 @@ nav {
   color: var(--modal-btn-hover);
 }
 
+.btn-modal:active,
+.btn-modal:focus {
+  color: var(--white-1);
+}
+
 /* SECTION: CONTACT ---------------------------------- */
 
 /* LOGO COLORS */
