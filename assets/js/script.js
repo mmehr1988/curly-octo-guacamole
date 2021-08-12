@@ -1,85 +1,24 @@
-// NAV: HOME
-$('#navHome').click(function () {
-  // NAV BAR LINK COLOR
-  $('#navHome').addClass('navActiveLink');
+///////////////////////////////////////////////////////////////
+// NAV Color Change + Section Hide & Unhide
+///////////////////////////////////////////////////////////////
 
-  // NAV BAR: NOT ACTIVE
-  $('#navAbout').removeClass('navActiveLink');
-  $('#navWork').removeClass('navActiveLink');
-  $('#navContact').removeClass('navActiveLink');
-  $('#navResume').removeClass('navActiveLink');
+$('nav ul li a').click(function () {
+  var navLinks = $('nav ul li a');
+  var navSection = $(this).attr('href');
 
-  // SECTION: SHOW
-  $('#large-image').removeClass('hidden');
-
-  // SECTION HIDE
-  $('#master-about').addClass('hidden');
-  $('#master-work').addClass('hidden');
-  $('#master-contact').addClass('hidden');
-  $('#master-resume').addClass('hidden');
-});
-
-// NAV: ABOUT
-$('#navAbout').click(function () {
-  // NAV BAR LINK COLOR
-  $('#navAbout').addClass('navActiveLink');
-
-  // NAV BAR: NOT ACTIVE
-  $('#navHome').removeClass('navActiveLink');
-  $('#navWork').removeClass('navActiveLink');
-  $('#navContact').removeClass('navActiveLink');
-  $('#navResume').removeClass('navActiveLink');
-
-  // SECTION: SHOW
-  $('#master-about').removeClass('hidden');
-
-  // SECTION HIDE
-  $('#large-image').addClass('hidden');
-  $('#master-work').addClass('hidden');
-  $('#master-contact').addClass('hidden');
-  $('#master-resume').addClass('hidden');
-});
-
-// NAV: WORK
-$('#navWork').click(function () {
-  // NAV BAR: ACTIVE
-  $('#navWork').addClass('navActiveLink');
-
-  // NAV BAR: NOT ACTIVE
-  $('#navHome').removeClass('navActiveLink');
-  $('#navAbout').removeClass('navActiveLink');
-  $('#navContact').removeClass('navActiveLink');
-  $('#navResume').removeClass('navActiveLink');
-
-  // SECTION: SHOW
-  $('#master-work').removeClass('hidden');
-
-  // SECTION: HIDE
-  $('#large-image').addClass('hidden');
-  $('#master-about').addClass('hidden');
-  $('#master-contact').addClass('hidden');
-  $('#master-resume').addClass('hidden');
-});
-
-// NAV: CONTACT
-$('#navContact').click(function () {
-  // NAV BAR: ACTIVE
-  $('#navContact').addClass('navActiveLink');
-
-  // NAV BAR: NOT ACTIVE
-  $('#navHome').removeClass('navActiveLink');
-  $('#navAbout').removeClass('navActiveLink');
-  $('#navWork').removeClass('navActiveLink');
-  $('#navResume').removeClass('navActiveLink');
-
-  // SECTION: SHOW
-  $('#master-contact').removeClass('hidden');
-
-  // SECTION: HIDE
-  $('#large-image').addClass('hidden');
-  $('#master-about').addClass('hidden');
-  $('#master-work').addClass('hidden');
-  $('#master-resume').addClass('hidden');
+  if ($(this)[0].id !== 'navResume') {
+    navLinks.each(function () {
+      // Checks if navActiveLink is in any of the nav elements
+      if ($(this)[0].className.includes('navActiveLink')) {
+        // If true, remove so the class to reset them to black
+        $(this).removeClass('navActiveLink');
+        $($(this).attr('href')).addClass('hidden');
+      }
+    });
+    // add the class "navActiveLink to the clicked element"
+    $(this).addClass('navActiveLink');
+    $(navSection).removeClass('hidden');
+  }
 });
 
 ///////////////////////////////////////////////////////////////

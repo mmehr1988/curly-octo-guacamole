@@ -111,7 +111,8 @@ nav {
 /* NAV FOCUS COLOR ---------------------------------- */
 
 .nav-link,
-.nav-link:active {
+.nav-link:active,
+.nav-link:focus {
   color: var(--black-1);
 }
 
@@ -120,8 +121,7 @@ nav {
   color: var(--nav-green-hover);
 }
 
-.navActiveLink,
-.nav-link:focus {
+.navActiveLink {
   color: var(--nav-green);
 }
 
