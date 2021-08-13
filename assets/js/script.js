@@ -41,10 +41,10 @@ $('.work-image').click(function () {
 
     if ($(this).hasClass('btn-repo') === true) {
       // To Open Repo Page
-      window.open(workRepoLink);
+      window.open(workRepoLink, '_blank');
     } else {
       // To Open App Page
-      window.open(workAppLink);
+      window.open(workAppLink, '_blank');
     }
   });
 
