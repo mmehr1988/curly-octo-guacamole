@@ -26,37 +26,33 @@ $('nav ul li a').click(function () {
 ///////////////////////////////////////////////////////////////
 
 // Loop work-images and open the modal window
-for (let i = 0; i < $('.work-image').length; i++) {
-  $('.work-image')
-    .eq(i)
-    .click(function () {
-      var workModal = String(`#work-${i + 1}-modal`);
+$('.work-image').click(function () {
+  var workModalParent = $(this).parents().children('div')[1].id;
+  // To find the number of the work number clicked
+  var workModalId = String(`#${workModalParent}`);
+  // To Open Modal Window
+  var myModal = new bootstrap.Modal($(workModalId), {});
+  myModal.show();
 
-      // To Open Modal Window
-      var myModal = new bootstrap.Modal($(workModal), {});
-      myModal.show();
+  $('.btn-modal').click(function () {
+    var workName = $(this).attr('name');
+    var workRepoLink = String(`https://github.com/mmehr1988/${workName}`);
+    var workAppLink = String(`https://mmehr1988.github.io/${workName}`);
 
-      // To Open Repo Link Or App Link
-      $('.btn-modal').click(function () {
-        var workName = $(this).attr('name');
-        var workRepoLink = String(`https://github.com/mmehr1988/${workName}`);
-        var workAppLink = String(`https://mmehr1988.github.io/${workName}`);
+    if ($(this).hasClass('btn-repo') === true) {
+      // To Open Repo Page
+      window.open(workRepoLink);
+    } else {
+      // To Open App Page
+      window.open(workAppLink);
+    }
+  });
 
-        if ($(this).hasClass('btn-repo') === true) {
-          // To Open Repo Page
-          window.open(workRepoLink);
-        } else {
-          // To Open App Page
-          window.open(workAppLink);
-        }
-      });
-
-      // To Close Modal
-      $('.btn-close').click(function () {
-        myModal.hide();
-      });
-    });
-}
+  // To Close Modal
+  $('.btn-close').click(function () {
+    myModal.hide();
+  });
+});
 
 ///////////////////////////////////////////////////////////////
 // NAV TOGGLER
