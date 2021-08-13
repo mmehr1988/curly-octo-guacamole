@@ -4,7 +4,6 @@
 
 $('nav ul li a').click(function () {
   var navLinks = $('nav ul li a');
-  var navSection = $(this).attr('href');
 
   if ($(this)[0].id !== 'navResume') {
     navLinks.each(function () {
@@ -17,7 +16,8 @@ $('nav ul li a').click(function () {
     });
     // add the class "navActiveLink to the clicked element"
     $(this).addClass('navActiveLink');
-    $(navSection).removeClass('hidden');
+    // NAV Link href is the id for each section.
+    $($(this).attr('href')).removeClass('hidden');
   }
 });
 

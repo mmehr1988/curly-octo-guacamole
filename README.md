@@ -33,13 +33,11 @@ For this weeks assignment, we were tasked with updating our initial portfolio we
 
 ## Homework Requirements
 
-Update Portfolio For Completed Projects
-
 ### Requirement #1: Update Portfolio To Showcase Bootcamp Coursework
 
-1. Project 1: DAHM
+1. Project 1: Digital Audio Harmonious Mixer
 
-   a. Summary Of Project: Digital mixer which uses four imported youtube and allows users to adjust video parameters to create unique sounds.
+   a. Summary Of Project: DAHM is digital mixer app that uses four imported youtube videos and allows users to adjust video parameters to create unique sounds.
 
    b. Github Repo: symmetrical-waddle
 
@@ -49,7 +47,7 @@ Update Portfolio For Completed Projects
 
 2. Assignment 1: Code Quiz
 
-   a. Summary Of Project: An app that cycles through questions and records user answers and outputs a score based on the time taken to complete quiz.
+   a. Summary Of Project: A multiple choice app that cycles through questions and outputs a score based on the time taken to complete quiz.
 
    b. Github Repo: miniature-telegram
 
@@ -57,9 +55,9 @@ Update Portfolio For Completed Projects
 
    d. Github App Link: [miniature-telegram App](https://mmehr1988.github.io/miniature-telegram/)
 
-3. Assignment 2: Weather App
+3. Assignment 2: Weather Dashboard
 
-   a. Summary: A weather dashboard created using third party API which allows users to input city in which they want to get weather data.
+   a. Summary: A weather app that allows users to input a city name and receive up to date weather data.
 
    b. Github Repo: legendary-meme
 
@@ -67,9 +65,9 @@ Update Portfolio For Completed Projects
 
    d. Github App Link: [legendary-meme App](https://mmehr1988.github.io/legendary-meme/)
 
-4. Assignment 3: Work Day Schedule
+4. Assignment 3: Work Day Scheduler
 
-   a. Summary: Work Day Scheduler allows you to save personal notes for each hour of the day.
+   a. Summary: A scheduler app that allows users to save personal notes for each hour of the day.
 
    b. Github Repo: automatic-doodle
 
@@ -109,19 +107,15 @@ Bootstrap Getting Started Page [Download Page](https://getbootstrap.com/docs/5.0
 
 Bootstrap Template Download Link [Bootstrap Templates]](https://github.com/twbs/bootstrap/releases/download/v5.0.2/bootstrap-5.0.2-dist.zip)
 
-I initially thought these types of CSS Frameworks would be able to solve any problem, however I soon learned that not everything is handed to you. Mistakes have been made when creating certain elements, and I’m ok with that. I know with time I will get better at using these frameworks, but the point is to force yourself to learn.
-
 ## Choose Fonts & Color Theme
 
 I’ve been using google fonts family “Suez One” styling for the past couple of assignments and for me it just gives a playful feel that I relate to.
 
-1. NAV: For the NAV Bar, I used a white background and upon user hover over links, I used a green color.
+1. NAV: For the NAV Bar, I used a white background and upon user hover over links, I used a light green `#1fb622`for the active link and a darker tone `#1a941c` for the hover effect.
 
-2. Section Titles: Mustard yellow in my opinion looks good on both black and white backgrounds.
+2. Section Titles: For the section titles, I used a mustard yellow `#e3b505`.
 
-3. About Content: I used a combo of pink and green to highlight important text. For the main text, I used black when in light mode and white when in dark mode. See below.
-
-4. Dark & Light Mode: I've seen the dark mode functionality be used on many websites. As a result, I wanted to learn how they did this so I decided the best way to learn is to try to implement it. For this reason, at the end of the NAV bar, I incorporated a button to allow users to switch between dark and light mode.
+3. About Content: I used a combo of pink `#ff007f` and green `#2ecc71` to highlight important text. For the remaining text I used the color white.
 
 ## File Structure
 
@@ -148,7 +142,7 @@ I’ve been using google fonts family “Suez One” styling for the past couple
 
    - Folder: avatar
 
-     - File: A 200x200 avatar photo used in personal portfolio
+     - File: A 200x200 avatar photo
 
    - Folder: work
 
@@ -182,11 +176,21 @@ I’ve been using google fonts family “Suez One” styling for the past couple
 
     [A] NAV Links + Page Change
 
-    - NAV Link Color Change - For the changing of color for the nav links, I created a custom css styling that changes color to dark green upon mouse hover, and for the focused page I added a lighter green to differentiate between the two states.
+    - NAV Link Color + Page Change Functionality - I wrote a jQuery click event to listen to which element in the nav was clicked.
 
-    - NAV Page Change Functionality - For the Page change, I used javascript to add and remove the class hidden to the html DOM elements for each section.
+      - Step #1: Remove NAV Color + Hide Active Section Of Previous Active Section
 
-    - Resume Download Link - The last NAV Link is where users can download my resume. The download functionality was done by adding the attribute `download` to the `<a>` link.
+        - `removeClass('navActiveLink')` - First step is to remove the class that is coloring the text.
+
+        - `.addClass('hidden')` - The second step was to hide the section that was active prior to the click by adding class `hidden`
+
+      - Step #2: Add NAV Color + Unhide Section Of Clicked Link
+
+        - `$(this).addClass('navActiveLink')` - First step is to add the class that is coloring the text.
+
+        - `$($(this).attr('href')).removeClass('hidden')` - The href of a navlink is the id of the section associated with that link. Once the id was pulled for the section, I removed the class `hidden` to unhide the section.
+
+    - Resume Link - the last NAV Link is where users can view my resume. On click, a new tab will open in the browser.
 
 3.  `<figure>`
 
@@ -196,7 +200,7 @@ I’ve been using google fonts family “Suez One” styling for the past couple
 
 4.  Section: About
 
-    - The About section did not change much. I liked the way I had it before except that I moved the resume icon to the top right of the section. I also changed the avatar to be less pixelated.
+    - In the about section, I wanted to make sure the first few lines indicated I'm a full stack web developer. I also wanted to highlight the languages I'm versed in with the green color I wrote about earlier.
 
 5.  Section: Work
 
