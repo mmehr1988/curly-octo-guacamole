@@ -10,7 +10,7 @@ For this weeks assignment, we were tasked with updating our initial portfolio we
 
 # Summary of Assignment
 
-## Resources used to complete this assignment:
+## Resources Used:
 
 1. Bootcamp
 2. Udemy
