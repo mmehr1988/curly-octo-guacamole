@@ -25,10 +25,12 @@ $('nav ul li a').click(function () {
 // MODAL WINDOWS
 ///////////////////////////////////////////////////////////////
 
-// Loop work-images and open the modal window
+// Click event for portfolio images
 $('.work-image').click(function () {
+  // Traversing back to parent element and moving down to the second div where the modal id can be targeted
   var workModalParent = $(this).parents().children('div')[1].id;
-  // To find the number of the work number clicked
+
+  // To convert the id into jQuery
   var workModalId = String(`#${workModalParent}`);
   // To Open Modal Window
   var myModal = new bootstrap.Modal($(workModalId), {});
