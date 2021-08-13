@@ -1,10 +1,8 @@
 # curly-octo-guacamole
 
-Assignment Summary: Portfolio Website Update #2
+## Assignment: Portfolio Update #2
 
-Developer: Mehdi Mehrabani
-
-Portfolio Link: [Portfolio](https://mmehr1988.github.io/curly-octo-guacamole/)
+## Portfolio: [Link](https://mmehr1988.github.io/curly-octo-guacamole/)
 
 For this weeks assignment, we were tasked with updating our initial portfolio website. The first time around, I was at the beginning of my bootcamp journey and there weren’t any projects to showcase. Since then, we've completed a handful of assignments and 1 group project that I’m proud of and want future employers to view.
 
