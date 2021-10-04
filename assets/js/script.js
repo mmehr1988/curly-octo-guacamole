@@ -1,7 +1,6 @@
 ///////////////////////////////////////////////////////////////
 // NAV COLOR CHANGE + SECTION HIDE & UNHIDE
 ///////////////////////////////////////////////////////////////
-
 $('nav ul li a').click(function () {
   var navLinks = $('nav ul li a');
 
@@ -14,23 +13,30 @@ $('nav ul li a').click(function () {
         $($(this).attr('href')).addClass('hidden');
       }
     });
+
     // add the class "navActiveLink to the clicked element"
     $(this).addClass('navActiveLink');
     // NAV Link href is the id for each section.
     $($(this).attr('href')).removeClass('hidden');
+    // To auto close the collapsed NAV bar
+    $('.navbar-collapse').collapse('hide');
+
+    // If navbar toggler icon is visible & clicked nav-toggler-icon is clicked, toggle class ="close" for element header
+    if ($('.navbar-toggler-icon').is(':visible')) {
+      $('.main-nav').toggleClass('close');
+    }
+
+    // For the page to start at the top on change
+    $('html, body').animate({ scrollTop: 0 }, 'slow');
+    return false;
   }
 });
 
 ///////////////////////////////////////////////////////////////
-// NAV TOGGLER
+// NAV COLLAPSE TO ADJUST MAIN SECTION HEIGHT
 ///////////////////////////////////////////////////////////////
-
-// TO COLLAPSE AFTER CLICK -----------------------------------
-
-$('#navbar-toggler').on('click', function () {
-  if ($('#navbar-toggler')[0].ariaExpanded) {
-    $('.navbar-nav>li>a').on('click', function () {
-      $('.navbar-collapse').collapse('hide');
-    });
-  }
+// When the nav-toggler-icon is clicked, toggle class ="close" for element header
+// Main Section height based on whether header has class close
+$('.navbar-toggler').click(function () {
+  $('.main-nav').toggleClass('close');
 });

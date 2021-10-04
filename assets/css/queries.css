@@ -8,34 +8,8 @@
 
 /* Small phones to small tablets: from 481px to 767px*/
 @media only screen and (max-width: 767px) {
-  h1 {
-    font-size: 1.6rem;
-  }
-
-  figure {
-    margin: 0;
-  }
-
-  .display-1 {
-    font-size: 4rem;
-  }
-
-  .display-5 {
-    font-size: 1.4rem;
-  }
-
-  p {
-    font-size: 1.2rem;
-  }
-
   .avatar {
     width: 30%;
-  }
-
-  .logo-github {
-    left: 1.9%;
-    top: 91%;
-    font-size: 300%;
   }
 }
 

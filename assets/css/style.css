@@ -3,25 +3,14 @@
   --black-1: #000000;
   --white-1: #ffffff;
 
-  --page-load-pink: #ff007f;
-
   /* NAV */
-  --nav-back-color: #ffffff;
   --nav-green: #1fb622;
   --nav-green-hover: #1a941c;
-
-  /* NAV Toggler */
-  --nav-toggler-back: #000000;
-  --nav-toggler-border: rgba(255, 255, 255, 0.705);
 
   /* Section: About */
   --sec-title-color: #e3b505;
   --about-intro-color: #ff007f;
   --about-keywords-color: #2ecc71;
-
-  /* Section: Work */
-  --work-github-current: #bd2c00;
-  --work-github-hover: #a12701;
 
   /* Modal BTN */
   --modal-btn-hover: #29e02c;
@@ -48,6 +37,16 @@ body {
   box-shadow: none;
 }
 
+/* HEADINGS ---------------------------------------------------- */
+
+h2 {
+  color: var(--sec-title-color);
+}
+
+p {
+  letter-spacing: 1px;
+}
+
 /* REUSABLE ITEMS ---------------------------------------------------- */
 .hidden {
   display: none;
@@ -65,14 +64,14 @@ a:focus:not(:focus-visible) {
 
 /* Background Image ------------------------------- */
 
-#large-image {
+#homepage {
   position: fixed;
   top: -50%;
   left: -50%;
   width: 200%;
   height: 200%;
 }
-#large-image img {
+#homepage img {
   position: absolute;
   top: 0;
   left: 0;
@@ -83,23 +82,28 @@ a:focus:not(:focus-visible) {
   min-height: 40%;
 }
 
-/* BOOTSRAP --------------------------------------- */
-/* To fix the slight change in height between media sizes */
-/* Transition between light and dark */
-nav {
-  min-height: 4.2rem;
-  background-color: var(--nav-back-color);
+/* NEW STYLING -------------------------------------- */
+
+.navbar-brand {
+  cursor: default;
 }
 
-.custom-toggler .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.463)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+/* NAV FOCUS COLOR ---------------------------------- */
+
+.nav-link,
+.nav-link:active,
+.nav-link:focus {
+  color: var(--black-1) !important;
 }
 
-.custom-toggler.navbar-toggler {
-  border-color: var(--nav-toggler-border);
-  border-width: 3px;
-  /* background-color: rgba(0, 0, 0); */
-  background-color: var(--nav-toggler-back);
+.nav-link:hover {
+  color: var(--nav-green-hover) !important;
+}
+
+.navActiveLink,
+.navActiveLink:active,
+.navActiveLink:focus {
+  color: var(--nav-green) !important;
 }
 
 .custom-toggler:active,
@@ -108,27 +112,24 @@ nav {
   transition: 0.15s transform;
 }
 
-.navbar-toggler:focus,
-.navbar-toggler:active,
-.navbar-toggler-icon:focus {
-  outline: none;
-  box-shadow: none;
+/* MAIN SECTION ---------------------------------- */
+
+.main-nav.close ~ main {
+  padding-top: 100px;
+  height: calc(100vh - 100px);
+  padding-left: 80px;
+  padding-right: 80px;
+  width: 100%;
+  transition: all 0.5s ease;
 }
 
-/* NAV FOCUS COLOR ---------------------------------- */
-
-.nav-link,
-.nav-link:active,
-.nav-link:focus {
-  color: var(--black-1);
-}
-
-.nav-link:hover {
-  color: var(--nav-green-hover);
-}
-
-.navActiveLink {
-  color: var(--nav-green);
+.main-nav ~ main {
+  padding-top: 340px;
+  height: calc(100vh - 340px);
+  padding-left: 80px;
+  padding-right: 80px;
+  width: 100%;
+  transition: all 0.5s ease;
 }
 
 /* SECTION TITLE COLORS ---------------------------------- */
@@ -139,14 +140,6 @@ nav {
 
 /* SECTION: ABOUT ---------------------------------- */
 
-#section-about {
-  letter-spacing: 1px;
-}
-
-.display-1 {
-  font-size: 6rem;
-}
-
 .p-about-intro {
   color: var(--about-intro-color);
 }
@@ -156,11 +149,6 @@ nav {
 }
 
 /* SECTION: WORK ---------------------------------- */
-
-.workContainer {
-  border: 3px solid grey;
-  border-radius: 5px;
-}
 
 /* MODAL BTNS */
 .btn-modal:hover {
@@ -215,9 +203,4 @@ nav {
 
 .contact-instagram:hover {
   color: #bc2a8d;
-}
-
-.btn-resume,
-.btn-resume:active {
-  border: none;
 }
