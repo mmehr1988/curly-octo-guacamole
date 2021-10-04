@@ -22,41 +22,6 @@ $('nav ul li a').click(function () {
 });
 
 ///////////////////////////////////////////////////////////////
-// MODAL WINDOWS
-///////////////////////////////////////////////////////////////
-
-// Click event for portfolio images
-$('.work-image').click(function () {
-  // Traversing back to parent element and moving down to the second div where the modal id can be targeted
-  var workModalParent = $(this).parents().children('div')[1].id;
-
-  // To convert the id into jQuery
-  var workModalId = String(`#${workModalParent}`);
-  // To Open Modal Window
-  var myModal = new bootstrap.Modal($(workModalId), {});
-  myModal.show();
-
-  $('.btn-modal').click(function () {
-    var workName = $(this).attr('name');
-    var workRepoLink = String(`https://github.com/mmehr1988/${workName}`);
-    var workAppLink = String(`https://mmehr1988.github.io/${workName}`);
-
-    if ($(this).hasClass('btn-repo') === true) {
-      // To Open Repo Page
-      window.open(workRepoLink, '_blank');
-    } else {
-      // To Open App Page
-      window.open(workAppLink, '_blank');
-    }
-  });
-
-  // To Close Modal
-  $('.btn-close').click(function () {
-    myModal.hide();
-  });
-});
-
-///////////////////////////////////////////////////////////////
 // NAV TOGGLER
 ///////////////////////////////////////////////////////////////
 
