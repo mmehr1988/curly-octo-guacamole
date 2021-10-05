@@ -11,6 +11,13 @@
   .avatar {
     width: 30%;
   }
+
+  .contact-github,
+  .contact-soundcloud,
+  .contact-instagram,
+  .contact-linkedin {
+    font-size: 4rem;
+  }
 }
 
 /* Small phones: from 0 to 480px  */
