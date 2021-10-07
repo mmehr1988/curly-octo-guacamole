@@ -148,6 +148,21 @@ a:focus:not(:focus-visible) {
   color: var(--about-keywords-color);
 }
 
+/* PROGRESS BAR ---------------------------------- */
+
+.progress {
+  background-color: var(--black-1);
+  height: 4rem;
+}
+
+.progress-bar {
+  height: 2.4rem;
+}
+
+i {
+  font-size: 3rem;
+}
+
 /* SECTION: WORK ---------------------------------- */
 
 .img-fluid.rounded {
