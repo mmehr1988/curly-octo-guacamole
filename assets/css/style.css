@@ -8,7 +8,7 @@
   --nav-green-hover: #1a941c;
 
   /* Section: About */
-  --sec-title-color: #e3b505;
+  --sec-title-color: #fdb900;
   --about-intro-color: #ff007f;
   --about-keywords-color: #2ecc71;
 
@@ -82,12 +82,6 @@ a:focus:not(:focus-visible) {
   min-height: 40%;
 }
 
-/* NEW STYLING -------------------------------------- */
-
-.navbar-brand {
-  cursor: default;
-}
-
 /* NAV FOCUS COLOR ---------------------------------- */
 
 .nav-link,
@@ -130,12 +124,6 @@ a:focus:not(:focus-visible) {
   padding-right: 80px;
   width: 100%;
   transition: all 0.5s ease;
-}
-
-/* SECTION TITLE COLORS ---------------------------------- */
-
-.section-title {
-  color: var(--sec-title-color);
 }
 
 /* SECTION: ABOUT ---------------------------------- */

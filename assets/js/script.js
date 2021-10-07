@@ -18,18 +18,17 @@ $('nav ul li a').click(function () {
     $(this).addClass('navActiveLink');
     // NAV Link href is the id for each section.
     $($(this).attr('href')).removeClass('hidden');
-    // To auto close the collapsed NAV bar
-    $('.navbar-collapse').collapse('hide');
-
-    // If navbar toggler icon is visible & clicked nav-toggler-icon is clicked, toggle class ="close" for element header
-    if ($('.navbar-toggler-icon').is(':visible')) {
-      $('.main-nav').toggleClass('close');
-    }
-
-    // For the page to start at the top on change
-    $('html, body').animate({ scrollTop: 0 }, 'slow');
-    return false;
   }
+  // To auto close the collapsed NAV bar
+  $('.navbar-collapse').collapse('hide');
+
+  // If navbar toggler icon is visible & clicked nav-toggler-icon is clicked, toggle class ="close" for element header
+  if ($('.navbar-toggler-icon').is(':visible')) {
+    $('.main-nav').toggleClass('close');
+  }
+
+  // For the page to start at the top on change
+  $('html, body').animate({ scrollTop: 0 }, 'slow');
 });
 
 ///////////////////////////////////////////////////////////////
