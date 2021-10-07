@@ -150,6 +150,10 @@ a:focus:not(:focus-visible) {
 
 /* SECTION: WORK ---------------------------------- */
 
+.img-fluid.rounded {
+  cursor: pointer;
+}
+
 /* MODAL BTNS */
 .btn-modal:hover {
   color: var(--modal-btn-hover);
