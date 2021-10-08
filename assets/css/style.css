@@ -95,9 +95,10 @@ a:focus:not(:focus-visible) {
 .nav-link:focus {
   color: var(--black-1) !important;
 }
-
+.navbar-brand:hover,
 .nav-link:hover {
   color: var(--nav-green-hover) !important;
+  transition: 0.2s color;
 }
 
 .navActiveLink,
