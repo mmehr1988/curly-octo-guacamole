@@ -9,7 +9,6 @@
   /* NAV */
   --nav-green: #1fb622;
   --nav-green-hover: #1a941c;
-  --nav-brand: #ff007f;
 
   /* Section: About */
   --sec-title-color: #f8a304;
@@ -29,6 +28,7 @@
 body {
   background-color: var(--black-1);
   font-family: 'Architects Daughter', cursive;
+  cursor: default;
 }
 
 /* JQUERY -----------------------------------------------------------------*/
@@ -93,7 +93,7 @@ a:focus:not(:focus-visible) {
 .nav-link:focus {
   color: var(--black-1) !important;
 }
-.navbar-brand:hover,
+
 .nav-link:hover {
   color: var(--nav-green-hover) !important;
   transition: 0.2s color;
