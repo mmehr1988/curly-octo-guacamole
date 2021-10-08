@@ -226,5 +226,6 @@ i {
 /* SECTION: PROGRESS BAR ---------------------------------- */
 
 svg {
-  width: 180px;
+  height: 100%;
+  width: 100%;
 }
