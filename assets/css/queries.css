@@ -27,8 +27,8 @@
 
 /* Small phones: from 0 to 480px  */
 @media only screen and (max-width: 480px) {
-  .svg-images {
-    padding: 0;
+  svg {
+    width: 40px;
   }
 
   p.fs-3.mb-0,
