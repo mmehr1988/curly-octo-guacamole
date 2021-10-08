@@ -36,8 +36,6 @@ body {
 
 *:focus {
   outline: none;
-  -moz-box-shadow: none;
-  -webkit-box-shadow: none;
   box-shadow: none;
 }
 
