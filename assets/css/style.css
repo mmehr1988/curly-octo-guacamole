@@ -108,6 +108,11 @@ a:focus:not(:focus-visible) {
 
 /* MAIN SECTION ---------------------------------- */
 
+main {
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
+}
+
 .main-nav.close ~ main {
   padding-top: 100px;
   height: calc(100vh - 100px);
@@ -210,4 +215,10 @@ i {
 
 .contact-instagram:hover {
   color: #bc2a8d;
+}
+
+/* SECTION: PROGRESS BAR ---------------------------------- */
+
+svg {
+  width: 180px;
 }

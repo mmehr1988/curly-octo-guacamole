@@ -22,4 +22,12 @@
 
 /* Small phones: from 0 to 480px  */
 @media only screen and (max-width: 480px) {
+  p.fs-3.mb-0,
+  p.fs-3 {
+    font-size: 1rem !important;
+  }
+
+  .p-about-intro {
+    font-size: 1.6rem !important;
+  }
 }
